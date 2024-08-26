@@ -1,122 +1,127 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWindowsForms>True</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <IsPublishable>True</IsPublishable>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
-    <StartupObject>GHelper.Program</StartupObject>
-    <ApplicationIcon>favicon.ico</ApplicationIcon>
-    <Platforms>AnyCPU;x64</Platforms>
-    <AssemblyName>GHelper</AssemblyName>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>GHelper</AssemblyName>
     <AssemblyVersion>0.186</AssemblyVersion>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IncludeSymbols>True</IncludeSymbols>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <IsPublishable>True</IsPublishable>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Nullable>enable</Nullable>
+    <OutputType>WinExe</OutputType>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <PublishAot>false</PublishAot>
+    <PublishSingleFile>true</PublishSingleFile>
+    <RepositoryType>git</RepositoryType>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <StartupObject>GHelper.Program</StartupObject>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Title>GHelper</Title>
+    <UseWindowsForms>True</UseWindowsForms>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  <PropertyGroup>
     <DebugType>embedded</DebugType>
+    <WarningLevel>9999</WarningLevel>
+    <NoWarn>1701;1702;CS1591;CA1001;CA1002;IDE0300;CA1707;CA1515;CA1711;CA1712;CA1062;CA1028;CA1051;CA1052;CA1031;CA1008;CA1012;CA1024;CA1034;CA1050;CA1054;CA1055;CA1063;CA1069;CA1401;CA1507;CA1508;CA1510;CA1716;CA1802;CA1805;CA1806;CA1812;CA1815;CA1816;CA1819;CA1820;CA1822;CA1823;CA1825;CA1829;CA1838;CA1841;CA1845;CA1847;CA1851;CA1852;CA1854;CA1859;CA1862;CA1866;CA1869;CA2000;CA2007;CA2008;CA2201;CA2211;CA2213;CA2214;CA2216;CA2234;CA2263;CA5392;CA5394;CA5399;CS0108;CS0162;CS0168;CS0169;CS0612;CS0618;CS0649;CS1570;CS1998;CS4014;CS8597;CS8600;CS8601;CS8602;CS8603;CS8604;CS8605;CS8618;CS8619;CS8622;CS8625;CS8629;CS8767;IDE0004;IDE0005;IDE0008;IDE0010;IDE0018;IDE0019;IDE0028;IDE0036;IDE0039;IDE0040;IDE0044;IDE0046;IDE0047;IDE0048;IDE0051;IDE0052;IDE0054;IDE0055;IDE0056;IDE0057;IDE0058;IDE0059;IDE0060;IDE0066;IDE0071;IDE0074;IDE0078;IDE0090;IDE0100;IDE0120;IDE0130;IDE0220;IDE0251;IDE0305;IDE1005;IDE1006;SYSLIB0014;WFAC010;NU5104</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DebugType>embedded</DebugType>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <DebugType>embedded</DebugType>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <DebugType>embedded</DebugType>
-  </PropertyGroup>
-
   <ItemGroup>
-    <Compile Remove="screenshots\**" />
-    <EmbeddedResource Remove="screenshots\**" />
-    <None Remove="screenshots\**" />
+    <Compile Remove="screenshots/**" />
+    <EmbeddedResource Remove="screenshots/**" />
+    <None Remove="screenshots/**" />
   </ItemGroup>
-
   <ItemGroup>
-    <None Remove="Resources\eco.ico" />
-    <None Remove="Resources\icons8-charging-battery-48.png" />
-    <None Remove="Resources\icons8-laptop-48.png" />
-    <None Remove="Resources\icons8-speed-48.png" />
-    <None Remove="Resources\icons8-video-card-48.png" />
-    <None Remove="Resources\ultimate.ico" />
+    <None Remove="Resources/eco.ico" />
+    <None Remove="Resources/icons8-charging-battery-48.png" />
+    <None Remove="Resources/icons8-laptop-48.png" />
+    <None Remove="Resources/icons8-speed-48.png" />
+    <None Remove="Resources/icons8-video-card-48.png" />
+    <None Remove="Resources/ultimate.ico" />
   </ItemGroup>
-
-
-
   <ItemGroup>
     <Content Include="favicon.ico">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="FftSharp" Version="2.0.0" />
-    <PackageReference Include="HidSharpCore" Version="1.2.1.1" />
-    <PackageReference Include="NAudio" Version="2.1.0" />
+    <PackageReference Include="FftSharp" Version="2.1.0" />
+    <PackageReference Include="HidSharpCore" Version="1.3.0" />
+    <PackageReference Include="NAudio" Version="2.2.1" />
     <PackageReference Include="NvAPIWrapper.Net" Version="0.8.1.101" />
-    <PackageReference Include="System.Management" Version="8.0.0" />
-    <PackageReference Include="TaskScheduler" Version="2.10.1" />
-    <PackageReference Include="WinForms.DataVisualization" Version="1.8.0" />
+    <PackageReference Include="System.Windows.Forms.DataVisualization" Version="1.0.0-prerelease.20110.1" />
+    <PackageReference Include="TaskScheduler" Version="2.11.0" />
+    <PackageReference Include="System.Management" Version="9.0.0-preview.7.24405.7" />
   </ItemGroup>
-
   <ItemGroup>
-    <Content Include="Resources\eco.ico">
+    <Content Include="Resources/eco.ico">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\ultimate.ico">
+    <Content Include="Resources/ultimate.ico">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-
   <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
+    <None Include="../docs/README.md">
+      <Pack>True</Pack>
+      <PackagePath>/</PackagePath>
+    </None>
+    <None Include="../LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>/</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties/Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Properties\Strings.Designer.cs">
+    <Compile Update="Properties/Strings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
-    <Compile Update="Properties\Settings.Designer.cs">
+    <Compile Update="Properties/Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.uk.resx">
+    <EmbeddedResource Update="Properties/Resources.uk.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Properties\Resources.uk.resx">
+    <EmbeddedResource Update="Properties/Resources.uk.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Properties\Strings.uk.resx">
+    <EmbeddedResource Update="Properties/Strings.uk.resx">
       <LastGenOutput>Strings.uk.Designer.cs</LastGenOutput>
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Properties\Strings.resx">
+    <EmbeddedResource Update="Properties/Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Properties\Resources.resx">
+    <EmbeddedResource Update="Properties/Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-
   <ItemGroup>
-    <None Update="Properties\Settings.settings">
+    <None Update="Properties/Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
@@ -127,5 +132,4 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
 </Project>
