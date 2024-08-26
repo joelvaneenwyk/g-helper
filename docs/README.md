@@ -1,17 +1,29 @@
-# G-Helper - Lightweight control tool for Asus laptops
+# G-Helper // Asus Laptop Controller  <!-- omit from toc -->
 
 <!-- markdownlint-disable MD033 -->
 
-[![United24](https://raw.githubusercontent.com/seerge/g-helper/main/docs/ua.png)](https://u24.gov.ua/)
 [![GitHub release](https://img.shields.io/github/release/seerge/g-helper)](https://GitHub.com/seerge/g-helper/releases/)
 [![Github all releases](https://img.shields.io/github/downloads/seerge/g-helper/total)](https://GitHub.com/seerge/g-helper/releases/) [![GitHub stars](https://img.shields.io/github/stars/seerge/g-helper.svg?style=social)](https://GitHub.com/seerge/g-helper/stargazers/) <sup>[中文版点这里](https://github.com/seerge/g-helper/blob/main/docs/README.zh-CN.md)</sup>
 
 Small and lightweight Armoury Crate alternative for Asus laptops offering almost same functionality without extra load and unnecessary services.
 
-Works with all popular models, such as ROG Zephyrus G14, G15, G16, M16, Flow X13, Flow X16, Flow Z13, TUF Series, Strix / Scar Series, ProArt, Vivobook, Zenbook, ROG Ally and many more!
-Works with all popular models, such as ROG Zephyrus G14, G15, G16, M16, Flow X13, Flow X16, Flow Z13, TUF Series, Strix or Scar Series, ProArt, Vivobook, Zenbook, ROG Ally / Ally X and many more!
+Works with all popular models, such as ROG Zephyrus G14, G15, G16, M16, Flow X13, Flow X16, Flow Z13, TUF Series, Strix or Scar Series, ProArt, Vivobook, Zenbook, ROG Ally / Ally X, and many more!
 
-## [:floppy_disk:Download](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
+> [:floppy_disk:Download](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
+
+- [:loudspeaker: YouTube Reviews and Guides](#loudspeaker-youtube-reviews-and-guides)
+- [📰 Articles](#-articles)
+- [:gift: Advantages](#gift-advantages)
+  - [:zap: Features](#zap-features)
+  - [:gear: Automation](#gear-automation)
+  - [:rocket: Performance Modes](#rocket-performance-modes)
+  - [:video\_game: GPU Modes](#video_game-gpu-modes)
+  - [:mouse: Asus Mouse and other peripherals support](#mouse-asus-mouse-and-other-peripherals-support)
+  - [⌨️ Keybindings](#️-keybindings)
+  - [🎮ROG Ally Bindings](#rog-ally-bindings)
+  - [🔖 Important Notice](#-important-notice)
+  - [Libraries and projects used](#libraries-and-projects-used)
+  - [Disclaimers](#disclaimers)
 
 > [!NOTE]
 > **⭐ If you like the app - please spread the word about it online**
@@ -43,8 +55,8 @@ Works with all popular models, such as ROG Zephyrus G14, G15, G16, M16, Flow X13
 
 ## 📰 Articles
 
-1. <https://www.digitaltrends.com/computing/g-helper-armoury-crate-alternative/>
-2. <https://binaryfork.com/ghelper-armoury-crate-alternative-10216/>
+1. [I found a gaming laptop utility that's actually worth using | Digital Trends](https://www.digitaltrends.com/computing/g-helper-armoury-crate-alternative/)
+2. [G-Helper: The Armoury Crate Alternative for ASUS Gaming Laptops](https://binaryfork.com/ghelper-armoury-crate-alternative-10216/)
 
 ## :gift: Advantages
 
@@ -84,7 +96,7 @@ Works with all popular models, such as ROG Zephyrus G14, G15, G16, M16, Flow X13
 
 ### :rocket: Performance Modes
 
-<img align="right" width="300" src="https://github.com/seerge/g-helper/assets/5920850/3e119674-db8d-486b-aa65-2bf9b61f9aa6">
+<img align="right" width="300" src="../docs/power-battery.png" alt="Power and battery settings">
 
 All Modes are **baked in BIOS** along with default fan curves and power limits and they are the **same** as in the Armoury Crate.
 
@@ -101,9 +113,9 @@ Each BIOS mode is paired with matching Windows Power Mode. You can adjust this s
 3. **Ultimate**: iGPU and dGPU enabled, but dGPU drives built in display (supported on 2022+ models)
 4. **Optimized**: disables dGPU on battery (Eco) and enables when plugged in (Standard)
 
-![Screenshot 2024-03-11 111818](https://github.com/seerge/g-helper/assets/5920850/fd69a81e-978d-4d5c-a0a8-26da51f90a5b)
+![Screenshot 2024-03-11 111818](../docs/screenshot-dark.png)
 
-![GPU Modes](https://github.com/seerge/g-helper/assets/5920850/65c6bdd5-728c-4965-b544-fcf5a85ed6a2)
+![GPU Modes](../docs/screenshot.png)
 
 ### :mouse: Asus Mouse and other peripherals support
 
@@ -136,34 +148,34 @@ Huge thanks to [@IceStormNG](https://github.com/IceStormNG) 👑 for contributio
 
 ### ⌨️ Keybindings
 
-- ``Fn + F5 / Fn + Shift + F5`` - Toggle Performance Modes forwards / backwards
-- ``Ctrl + Shift + F5 / Ctrl + Shift + Alt + F5`` - Toggle Performance Modes forwards / backwards
-- ``Ctrl + Shift + F12`` - Open G-Helper window
-- ``Ctrl + M1 / M2`` - Screen brightness Down / Up
-- ``Shift + M1 / M2`` - Backlight brightness Down / Up
-- ``Fn + C`` - Fn-Lock
-- ``Fn + Ctrl +  F7 / F8`` - Flicker-free dimming Down / Up
-- ``Fn + Shift + F7 / F8`` - Matrix / Slash Lighting brightness Down / Up
-- ``Fn + Shift + F7 / F8`` - Screenpad brightness Down / Up
-- ``Ctrl + Shift + F20`` - Mute Microphone
-- ``Ctrl + Shift + Alt + F13`` - Toggle Display Refresh Rate
-- ``Ctrl + Shift + Alt + F14`` - Eco GPU Mode
-- ``Ctrl + Shift + Alt + F15`` - Standard GPU Mode
-- ``Ctrl + Shift + Alt + F16`` - Silent
-- ``Ctrl + Shift + Alt + F17`` - Balanced
-- ``Ctrl + Shift + Alt + F18`` - Turbo
-- ``Ctrl + Shift + Alt + F19`` - Custom 1 (if exists)
-- ``Ctrl + Shift + Alt + F20`` - Custom 2 (if exists)
+- <kbd>Fn</kbd> + <kbd>F5</kbd> / <kbd>Fn</kbd> + <kbd>Shift</kbd> + <kbd>F5</kbd> - Toggle Performance Modes forwards / backwards
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F5</kbd> / <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F5</kbd> - Toggle Performance Modes forwards / backwards
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F12</kbd> - Open G-Helper window
+- <kbd>Ctrl</kbd> + <kbd>M1</kbd> / <kbd>M2</kbd> - Screen brightness Down / Up
+- <kbd>Shift</kbd> + <kbd>M1</kbd> / <kbd>M2</kbd> - Backlight brightness Down / Up
+- <kbd>Fn</kbd> + <kbd>C</kbd> - Fn-Lock
+- <kbd>Fn</kbd> + <kbd>Ctrl</kbd> + <kbd>F7</kbd> / <kbd>F8</kbd> - Flicker-free dimming Down / Up
+- <kbd>Fn</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> / <kbd>F8</kbd> - Matrix / Slash Lighting brightness Down / Up
+- <kbd>Fn</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> / <kbd>F8</kbd> - Screenpad brightness Down / Up
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F20</kbd> - Mute Microphone
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F13</kbd> - Toggle Display Refresh Rate
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F14</kbd> - Eco GPU Mode
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F15</kbd> - Standard GPU Mode
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F16</kbd> - Silent
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F17</kbd> - Balanced
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F18</kbd> - Turbo
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F19</kbd> - Custom 1 (if exists)
+- <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F20</kbd> - Custom 2 (if exists)
 - [Custom keybindings / hotkeys](https://github.com/seerge/g-helper/wiki/Power-user-settings#custom-hotkey-actions)
 
 ### 🎮ROG Ally Bindings
 
-- ``M + DPad Left / Right`` - Display Brightness
-- ``M + DPad Up`` - Touch keyboard
-- ``M + DPad Down`` - Show desktop
-- ``M + Y`` - Toggle AMD overay
-- ``M + X`` - Screenshot
-- ``M + Right Stick Click`` - Controller Mode
+- <kbd>M</kbd> + <kbd>DPad Left</kbd> / <kbd>Right</kbd> - Display Brightness
+- <kbd>M</kbd> + <kbd>DPad Up</kbd> - Touch keyboard
+- <kbd>M</kbd> + <kbd>DPad Down</kbd> - Show desktop
+- <kbd>M</kbd> + <kbd>Y</kbd> - Toggle AMD overay
+- <kbd>M</kbd> + <kbd>X</kbd> - Screenshot
+- <kbd>M</kbd> + <kbd>Right Stick Click</kbd> - Controller Mode
 
 ------------------
 
