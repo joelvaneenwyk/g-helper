@@ -1,0 +1,11 @@
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions:
+  - name: g-helper
+    path: ./.github/config/g-helper.dict
+    addWords: true
+dictionaries:
+  - g-helper
+words: []
+ignoreWords: []
+import: []
