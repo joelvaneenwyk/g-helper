@@ -1,16 +1,17 @@
 # G-Helper——轻量级的华硕笔记本控制中心
-[![United24](https://raw.githubusercontent.com/seerge/g-helper/main/docs/ua.png)](https://u24.gov.ua/)
-[![GitHub release](https://img.shields.io/github/release/seerge/g-helper)](https://GitHub.com/seerge/g-helper/releases/) 
-[![Github all releases](https://img.shields.io/github/downloads/seerge/g-helper/total)](https://GitHub.com/seerge/g-helper/releases/) [![GitHub stars](https://img.shields.io/github/stars/seerge/g-helper.svg?style=social)](https://GitHub.com/seerge/g-helper/stargazers/) 
 
+[![United24](https://raw.githubusercontent.com/seerge/g-helper/main/docs/ua.png)](https://u24.gov.ua/)
+[![GitHub release](https://img.shields.io/github/release/seerge/g-helper)](https://GitHub.com/seerge/g-helper/releases/)
+[![Github all releases](https://img.shields.io/github/downloads/seerge/g-helper/total)](https://GitHub.com/seerge/g-helper/releases/) [![GitHub stars](https://img.shields.io/github/stars/seerge/g-helper.svg?style=social)](https://GitHub.com/seerge/g-helper/stargazers/)
 
 语言: [English](https://github.com/seerge/g-helper#readme) | 中文
 
 适用于华硕（Asus）笔记本电脑的轻量级 Armoury Crate (奥创控制中心)替代品，在功能几乎相同的同时减少不必要的服务以减轻负载。
 G-helper兼容所有主流型号，例如 ROG 幻14、幻15、幻16、幻13、幻X、天选（飞行堡垒）系列、枪神/魔霸系列、创系列、灵耀系列、无畏系列、ROG Ally 等！
 
+<!-- markdownlint-disable MD033 -->
 
-# [:floppy_disk:下载应用](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
+## [:floppy_disk:下载应用](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
 
 <table>
 <tr>
@@ -26,6 +27,8 @@ G-helper兼容所有主流型号，例如 ROG 幻14、幻15、幻16、幻13、�
 如果你喜欢这个应用，请[给这个项目⭐️](https://github.com/seerge/g-helper) 或者向别人推荐它！
 
 [常见问题解答(FAQ)](#常见问题解答)
+
+<!-- markdownlint-disable MD051 -->
 
 [安装指南](#安装指南)
 
@@ -44,8 +47,6 @@ _如果你在别的地方提到这个软件-请记得加上这个项目的网址
 5. FN 锁定和自定义热键
 
 ![image](https://github.com/pasical/g-helper/assets/112304778/ee221865-cf36-4246-95f0-47313e647230)
-
-
 
 ### ⚡️ 主要功能
 
@@ -66,7 +67,7 @@ _如果你在别的地方提到这个软件-请记得加上这个项目的网址
 15. Mini-LED 屏幕的多区调光
 16. 低亮度防闪烁功能和显示风格的修改
 
-### ⚙️ 当使用电池供电或插上电源时，自动切换：
+### ⚙️ 当使用电池供电或插上电源时，自动切换
 
 - 性能模式 (软件会记住上一次使用电池或插上电源时的电源模式)
 - 自动切换独立显卡模式 - 使用电池时停用独显，并在插上电源时重新启用
@@ -103,6 +104,7 @@ _PPTs 默认在 幻14 2022版上显示, 对于其他型号 PPTs 的显示将会�
 [目前支持的型号](https://github.com/seerge/g-helper/discussions/900)
 
 *对于中国大陆发行的版本请自行参考
+
 - ROG Chakram X (P708)
 - ROG Chakram Core (P511)
 - ROG Gladius II and Gladius II Origin (P502 and P504)
@@ -142,6 +144,7 @@ _PPTs 默认在 幻14 2022版上显示, 对于其他型号 PPTs 的显示将会�
 - [自定义键绑定/热键](https://github.com/seerge/g-helper/wiki/Power-user-settings#custom-hotkey-actions)
 
 ### 🎮ROG Ally 按键
+
 - ``M + DPad Left / Right`` - 显示亮度
 - ``M + DPad Up`` - 屏幕键盘
 - ``M + DPad Down`` - 显示桌面
@@ -150,14 +153,14 @@ _PPTs 默认在 幻14 2022版上显示, 对于其他型号 PPTs 的显示将会�
 - ``M + Right Stick Click`` - 控制器模式
 
 ------------------
-#### 如果您喜欢本项目，可以扫描以下二维码捐赠 
+
+#### 如果您喜欢本项目，可以扫描以下二维码捐赠
 
 | [Paypal in EUR](https://www.paypal.com/donate/?hosted_button_id=4HMSHS4EBQWTA) | [Paypal in USD](https://www.paypal.com/donate/?hosted_button_id=SRM6QUX6ACXDY) |
 | ------------------------------------------ | ----------------------------------------------- |
 | [![QR Code](https://user-images.githubusercontent.com/5920850/233658717-0441494d-fede-4a2c-b4f2-4b16a184a69a.png)](https://www.paypal.com/donate/?hosted_button_id=4HMSHS4EBQWTA) | [![QR Code](https://github-production-user-asset-6210df.s3.amazonaws.com/5920850/239492811-b487e89a-3df6-42ea-bdb8-24c455ab2310.png)](https://www.paypal.com/donate/?hosted_button_id=SRM6QUX6ACXDY) |
 
 ------------------
-
 
 # 常见问题解答
 
@@ -288,7 +291,6 @@ G-helper是一个单文件的exe文件, 而且它不会向系统中安装任何�
 - **不建议**运行“ASUS Smart Display Control”应用程序，因为它会尝试更改刷新率并与 g-helper 争夺相同的功能。 您可以安全地卸载它。
 - 如果您不打算使用 MyASUS，您可以停止/禁用不必要的服务：转到应用程序中的 **Extra**，然后按 Asus 服务部分中的“停止”。 要重新启动/启用服务 - 单击“开始”。
 
-
 ---
 
 精简你的windows可以帮助延长电池的使用时间，同时让笔电的温度更低一些
@@ -321,16 +323,15 @@ Where ``mode = 0 (balanced), 1 (turbo), 2 (silent)``
 1. 要想运行任意应用 - 向 "action" 文本框中粘贴应用文件exe的完整路径，例如:
    ``C:\Program Files\EA Games\Battlefield 2042\BF2042.exe``
 2. 要想模拟任意windows按键 - 向"action"文本框中粘贴相对应的 keycode，例如 ``0x2C`` 为屏幕截图键。
-   Keycodes的完整列表: https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+   Keycodes的完整列表: <https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes>
 
 ![image](https://github.com/pasical/g-helper/assets/112304778/1280b7c9-f0c1-4b91-b502-2b9dd79b12d8)
-
-
 
 ---
 
 ### 使用的库和项目
-- [Linux Kernel](https://github.com/torvalds/linux/blob/master/drivers/platform/x86/asus-wmi.c)华硕 ACPI/WMI 接口中一些基本端点的 Linux 内核 
+
+- [Linux Kernel](https://github.com/torvalds/linux/blob/master/drivers/platform/x86/asus-wmi.c)华硕 ACPI/WMI 接口中一些基本端点的 Linux 内核
 - [NvAPIWrapper](https://github.com/falahati/NvAPIWrapper) 用于访问 Nvidia API
 - [Starlight](https://github.com/vddCore/Starlight) 光显矩阵通信协议
 - [UXTU](https://github.com/JamesCJ60/Universal-x86-Tuning-Utility) 使用 Ryzen 系统管理单元进行降压
