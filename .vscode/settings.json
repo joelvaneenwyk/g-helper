@@ -1,0 +1,6 @@
+{
+  "[xaml][xml][msbuild]": {
+    "editor.defaultFormatter": "redhat.vscode-xml",
+    "editor.formatOnSave": false
+  }
+}
