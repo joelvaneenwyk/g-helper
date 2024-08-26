@@ -7,14 +7,14 @@ namespace GHelper
     {
         private static Dictionary<LightingMode, string> lightingModeNames = new Dictionary<LightingMode, string>()
         {
-            { LightingMode.Static,Properties.Strings.AuraStatic},
-            { LightingMode.Breathing, Properties.Strings.AuraBreathe},
-            { LightingMode.ColorCycle, Properties.Strings.AuraColorCycle},
-            { LightingMode.Rainbow, Properties.Strings.AuraRainbow},
-            { LightingMode.React, Properties.Strings.AuraReact},
-            { LightingMode.Comet, Properties.Strings.AuraComet},
-            { LightingMode.BatteryState, Properties.Strings.AuraBatteryState},
-            { LightingMode.Off, Properties.Strings.MatrixOff},
+            { LightingMode.Static,GHelper.app.Properties.Strings.AuraStatic},
+            { LightingMode.Breathing, GHelper.app.Properties.Strings.AuraBreathe},
+            { LightingMode.ColorCycle, GHelper.app.Properties.Strings.AuraColorCycle},
+            { LightingMode.Rainbow, GHelper.app.Properties.Strings.AuraRainbow},
+            { LightingMode.React, GHelper.app.Properties.Strings.AuraReact},
+            { LightingMode.Comet, GHelper.app.Properties.Strings.AuraComet},
+            { LightingMode.BatteryState, GHelper.app.Properties.Strings.AuraBatteryState},
+            { LightingMode.Off, GHelper.app.Properties.Strings.MatrixOff},
         };
         private List<LightingMode> supportedLightingModes = new List<LightingMode>();
 
@@ -32,31 +32,31 @@ namespace GHelper
             dpiButtons = new RButton[] { buttonDPI1, buttonDPI2, buttonDPI3, buttonDPI4 };
 
 
-            labelPollingRate.Text = Properties.Strings.PollingRate;
-            labelLighting.Text = Properties.Strings.Lighting;
-            labelLightingMode.Text = Properties.Strings.AuraLightingMode;
-            labelEnergy.Text = Properties.Strings.EnergySettings;
-            labelPerformance.Text = Properties.Strings.MousePerformance;
-            checkBoxRandomColor.Text = Properties.Strings.AuraRandomColor;
-            labelLowBatteryWarning.Text = Properties.Strings.MouseLowBatteryWarning;
-            labelAutoPowerOff.Text = Properties.Strings.MouseAutoPowerOff;
-            buttonSync.Text = Properties.Strings.MouseSynchronize;
-            checkBoxAngleSnapping.Text = Properties.Strings.MouseAngleSnapping;
-            labelLiftOffDistance.Text = Properties.Strings.MouseLiftOffDistance;
-            labelChargingState.Text = "(" + Properties.Strings.Charging + ")";
-            labelProfile.Text = Properties.Strings.Profile;
-            labelButtonDebounce.Text = Properties.Strings.MouseButtonResponse;
-            labelAcceleration.Text = Properties.Strings.Acceleration;
-            labelDeceleration.Text = Properties.Strings.Deceleration;
+            labelPollingRate.Text = GHelper.app.Properties.Strings.PollingRate;
+            labelLighting.Text = GHelper.app.Properties.Strings.Lighting;
+            labelLightingMode.Text = GHelper.app.Properties.Strings.AuraLightingMode;
+            labelEnergy.Text = GHelper.app.Properties.Strings.EnergySettings;
+            labelPerformance.Text = GHelper.app.Properties.Strings.MousePerformance;
+            checkBoxRandomColor.Text = GHelper.app.Properties.Strings.AuraRandomColor;
+            labelLowBatteryWarning.Text = GHelper.app.Properties.Strings.MouseLowBatteryWarning;
+            labelAutoPowerOff.Text = GHelper.app.Properties.Strings.MouseAutoPowerOff;
+            buttonSync.Text = GHelper.app.Properties.Strings.MouseSynchronize;
+            checkBoxAngleSnapping.Text = GHelper.app.Properties.Strings.MouseAngleSnapping;
+            labelLiftOffDistance.Text = GHelper.app.Properties.Strings.MouseLiftOffDistance;
+            labelChargingState.Text = "(" + GHelper.app.Properties.Strings.Charging + ")";
+            labelProfile.Text = GHelper.app.Properties.Strings.Profile;
+            labelButtonDebounce.Text = GHelper.app.Properties.Strings.MouseButtonResponse;
+            labelAcceleration.Text = GHelper.app.Properties.Strings.Acceleration;
+            labelDeceleration.Text = GHelper.app.Properties.Strings.Deceleration;
 
-            buttonLightingZoneLogo.Text = Properties.Strings.AuraZoneLogo;
-            buttonLightingZoneScroll.Text = Properties.Strings.AuraZoneScroll;
-            buttonLightingZoneUnderglow.Text = Properties.Strings.AuraZoneUnderglow;
-            buttonLightingZoneAll.Text = Properties.Strings.AuraZoneAll;
-            buttonLightingZoneDock.Text = Properties.Strings.AuraZoneDock;
+            buttonLightingZoneLogo.Text = GHelper.app.Properties.Strings.AuraZoneLogo;
+            buttonLightingZoneScroll.Text = GHelper.app.Properties.Strings.AuraZoneScroll;
+            buttonLightingZoneUnderglow.Text = GHelper.app.Properties.Strings.AuraZoneUnderglow;
+            buttonLightingZoneAll.Text = GHelper.app.Properties.Strings.AuraZoneAll;
+            buttonLightingZoneDock.Text = GHelper.app.Properties.Strings.AuraZoneDock;
 
-            buttonExport.Text = Properties.Strings.Export;
-            buttonImport.Text = Properties.Strings.Import;
+            buttonExport.Text = GHelper.app.Properties.Strings.Export;
+            buttonImport.Text = GHelper.app.Properties.Strings.Import;
 
             InitTheme();
 
@@ -478,7 +478,7 @@ namespace GHelper
         {
             for (int i = 0; i < mouse.ProfileCount(); ++i)
             {
-                String prf = Properties.Strings.Profile + " " + (i + 1);
+                String prf = GHelper.app.Properties.Strings.Profile + " " + (i + 1);
                 comboProfile.Items.Add(prf);
             }
 
@@ -503,10 +503,10 @@ namespace GHelper
             {
                 buttonDPIColor.Visible = false;
                 pictureDPIColor.Visible = false;
-                buttonDPI1.Image = ControlHelper.TintImage(Properties.Resources.lighting_dot_24, Color.Red);
-                buttonDPI2.Image = ControlHelper.TintImage(Properties.Resources.lighting_dot_24, Color.Purple);
-                buttonDPI3.Image = ControlHelper.TintImage(Properties.Resources.lighting_dot_24, Color.Blue);
-                buttonDPI4.Image = ControlHelper.TintImage(Properties.Resources.lighting_dot_24, Color.Green);
+                buttonDPI1.Image = ControlHelper.TintImage(GHelper.app.Properties.Resources.lighting_dot_24, Color.Red);
+                buttonDPI2.Image = ControlHelper.TintImage(GHelper.app.Properties.Resources.lighting_dot_24, Color.Purple);
+                buttonDPI3.Image = ControlHelper.TintImage(GHelper.app.Properties.Resources.lighting_dot_24, Color.Blue);
+                buttonDPI4.Image = ControlHelper.TintImage(GHelper.app.Properties.Resources.lighting_dot_24, Color.Green);
 
                 buttonDPI1.BorderColor = Color.Red;
                 buttonDPI2.BorderColor = Color.Purple;
@@ -567,8 +567,8 @@ namespace GHelper
             if (mouse.HasLiftOffSetting())
             {
                 comboBoxLiftOffDistance.Items.AddRange(new string[] {
-                    Properties.Strings.Low,
-                    Properties.Strings.High,
+                    GHelper.app.Properties.Strings.Low,
+                    GHelper.app.Properties.Strings.High,
                 });
             }
             else
@@ -592,12 +592,12 @@ namespace GHelper
             if (mouse.HasAutoPowerOff())
             {
                 comboBoxAutoPowerOff.Items.AddRange(new string[]{
-                    " 1 "+ Properties.Strings.Minute,
-                    " 2 "+ Properties.Strings.Minutes,
-                    " 3 "+ Properties.Strings.Minutes,
-                    " 5 "+ Properties.Strings.Minutes,
-                    "10 "+ Properties.Strings.Minutes,
-                     Properties.Strings.Never,
+                    " 1 "+ GHelper.app.Properties.Strings.Minute,
+                    " 2 "+ GHelper.app.Properties.Strings.Minutes,
+                    " 3 "+ GHelper.app.Properties.Strings.Minutes,
+                    " 5 "+ GHelper.app.Properties.Strings.Minutes,
+                    "10 "+ GHelper.app.Properties.Strings.Minutes,
+                     GHelper.app.Properties.Strings.Never,
                 });
             }
 
@@ -641,14 +641,14 @@ namespace GHelper
                 InitLightingModes();
 
                 comboBoxAnimationDirection.Items.AddRange(new string[] {
-                    Properties.Strings.AuraClockwise,
-                    Properties.Strings.AuraCounterClockwise,
+                    GHelper.app.Properties.Strings.AuraClockwise,
+                    GHelper.app.Properties.Strings.AuraCounterClockwise,
                 });
 
                 comboBoxAnimationSpeed.Items.AddRange(new string[] {
-                    Properties.Strings.AuraSlow,
-                    Properties.Strings.AuraNormal,
-                    Properties.Strings.AuraFast
+                    GHelper.app.Properties.Strings.AuraSlow,
+                    GHelper.app.Properties.Strings.AuraNormal,
+                    GHelper.app.Properties.Strings.AuraFast
                 });
             }
             else
@@ -763,11 +763,11 @@ namespace GHelper
 
             if (mouse.Charging)
             {
-                pictureBoxBatteryState.BackgroundImage = ControlHelper.TintImage(Properties.Resources.icons8_ladende_batterie_48, foreMain);
+                pictureBoxBatteryState.BackgroundImage = ControlHelper.TintImage(GHelper.app.Properties.Resources.icons8_ladende_batterie_48, foreMain);
             }
             else
             {
-                pictureBoxBatteryState.BackgroundImage = ControlHelper.TintImage(Properties.Resources.icons8_batterie_voll_geladen_48, foreMain);
+                pictureBoxBatteryState.BackgroundImage = ControlHelper.TintImage(GHelper.app.Properties.Resources.icons8_batterie_voll_geladen_48, foreMain);
             }
         }
 
@@ -855,7 +855,7 @@ namespace GHelper
                 }
                 if (mouse.HasDPIColors())
                 {
-                    dpiButtons[i].Image = ControlHelper.TintImage(Properties.Resources.lighting_dot_24, dpi.Color);
+                    dpiButtons[i].Image = ControlHelper.TintImage(GHelper.app.Properties.Resources.lighting_dot_24, dpi.Color);
                     dpiButtons[i].BorderColor = dpi.Color;
                 }
                 dpiButtons[i].Activated = (mouse.DpiProfile - 1) == i;
@@ -945,7 +945,7 @@ namespace GHelper
             if (!mouse.Import(data))
             {
                 Logger.WriteLine("Failed to import mouse profile");
-                MessageBox.Show(Properties.Strings.MouseImportFailed);
+                MessageBox.Show(GHelper.app.Properties.Strings.MouseImportFailed);
             }
             else
             {

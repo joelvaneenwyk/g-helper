@@ -77,7 +77,7 @@ namespace GHelper.Gpu
 
             if (CurrentGPU == AsusACPI.GPUModeUltimate)
             {
-                DialogResult dialogResult = MessageBox.Show(Properties.Strings.AlertUltimateOff, Properties.Strings.AlertUltimateTitle, MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show(GHelper.app.Properties.Strings.AlertUltimateOff, GHelper.app.Properties.Strings.AlertUltimateTitle, MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     status = Program.acpi.DeviceSet(AsusACPI.GPUMux, 1, "GPUMux");
@@ -87,7 +87,7 @@ namespace GHelper.Gpu
             }
             else if (GPUMode == AsusACPI.GPUModeUltimate)
             {
-                DialogResult dialogResult = MessageBox.Show(Properties.Strings.AlertUltimateOn, Properties.Strings.AlertUltimateTitle, MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show(GHelper.app.Properties.Strings.AlertUltimateOn, GHelper.app.Properties.Strings.AlertUltimateTitle, MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     if (AppConfig.NoAutoUltimate())
@@ -230,7 +230,7 @@ namespace GHelper.Gpu
                         if (Program.acpi.IsXGConnected()) return false;
                         if (HardwareControl.IsUsedGPU())
                         {
-                            DialogResult dialogResult = MessageBox.Show(Properties.Strings.AlertDGPU, Properties.Strings.AlertDGPUTitle, MessageBoxButtons.YesNo);
+                            DialogResult dialogResult = MessageBox.Show(GHelper.app.Properties.Strings.AlertDGPU, GHelper.app.Properties.Strings.AlertDGPUTitle, MessageBoxButtons.YesNo);
                             if (dialogResult == DialogResult.No) return false;
                         }
 
@@ -251,7 +251,7 @@ namespace GHelper.Gpu
 
             if (confirm)
             {
-                DialogResult dialogResult = MessageBox.Show(Properties.Strings.RestartGPU, Properties.Strings.EcoMode, MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show(GHelper.app.Properties.Strings.RestartGPU, GHelper.app.Properties.Strings.EcoMode, MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.No) return;
             }
 
@@ -351,7 +351,7 @@ namespace GHelper.Gpu
         }
 
         // Manually forcing standard mode on shutdown/hibernate for some exotic cases
-        // https://github.com/seerge/g-helper/pull/855 
+        // https://github.com/seerge/g-helper/pull/855
         public void StandardModeFix()
         {
             if (!AppConfig.IsGPUFix()) return; // No config entry

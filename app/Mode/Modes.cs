@@ -9,9 +9,9 @@ namespace GHelper.Mode
         {
             Dictionary<int, string> modes = new Dictionary<int, string>
             {
-              {2, Properties.Strings.Silent},
-              {0, Properties.Strings.Balanced},
-              {1, Properties.Strings.Turbo}
+              {2, GHelper.app.Properties.Strings.Silent},
+              {0, GHelper.app.Properties.Strings.Balanced},
+              {1, GHelper.app.Properties.Strings.Turbo}
             };
 
             for (int i = 3; i < maxModes; i++)
@@ -122,11 +122,11 @@ namespace GHelper.Mode
             switch (mode)
             {
                 case 0:
-                    return Properties.Strings.Balanced;
+                    return GHelper.app.Properties.Strings.Balanced;
                 case 1:
-                    return Properties.Strings.Turbo;
+                    return GHelper.app.Properties.Strings.Turbo;
                 case 2:
-                    return Properties.Strings.Silent;
+                    return GHelper.app.Properties.Strings.Silent;
                 default:
                     return AppConfig.GetString("mode_name_" + mode);
             }

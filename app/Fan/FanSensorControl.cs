@@ -111,9 +111,9 @@ namespace GHelper.Fan
             if (value > GetFanMax(device) && value <= INADEQUATE_MAX) SetFanMax(device, value);
 
             if (fanRpm)
-                return Properties.Strings.FanSpeed + ": " + (value * 100).ToString() + "RPM";
+                return GHelper.app.Properties.Strings.FanSpeed + ": " + (value * 100).ToString() + "RPM";
             else
-                return Properties.Strings.FanSpeed + ": " + Math.Min(Math.Round((float)value / GetFanMax(device) * 100), 100).ToString() + "%"; // relatively to max RPM
+                return GHelper.app.Properties.Strings.FanSpeed + ": " + Math.Min(Math.Round((float)value / GetFanMax(device) * 100), 100).ToString() + "%"; // relatively to max RPM
         }
 
         public void StartCalibration()

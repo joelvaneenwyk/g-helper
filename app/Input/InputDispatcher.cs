@@ -530,7 +530,7 @@ namespace GHelper.Input
                 case "miniled":
                     if (ScreenCCD.GetHDRStatus()) return;
                     string miniledName = screenControl.ToogleMiniled();
-                    Program.toast.RunToast(miniledName, miniledName == Properties.Strings.OneZone ? ToastIcon.BrightnessDown : ToastIcon.BrightnessUp);
+                    Program.toast.RunToast(miniledName, miniledName == GHelper.app.Properties.Strings.OneZone ? ToastIcon.BrightnessDown : ToastIcon.BrightnessUp);
                     break;
                 case "aura":
                     Program.settingsForm.BeginInvoke(Program.settingsForm.CycleAuraMode);
@@ -559,7 +559,7 @@ namespace GHelper.Input
                     break;
                 case "micmute":
                     bool muteStatus = Audio.ToggleMute();
-                    Program.toast.RunToast(muteStatus ? Properties.Strings.Muted : Properties.Strings.Unmuted, muteStatus ? ToastIcon.MicrophoneMute : ToastIcon.Microphone);
+                    Program.toast.RunToast(muteStatus ? GHelper.app.Properties.Strings.Muted : GHelper.app.Properties.Strings.Unmuted, muteStatus ? ToastIcon.MicrophoneMute : ToastIcon.Microphone);
                     if (AppConfig.IsVivoZenbook()) Program.acpi.DeviceSet(AsusACPI.MicMuteLed, muteStatus ? 1 : 0, "MicmuteLed");
                     break;
                 case "brightness_up":
@@ -586,7 +586,7 @@ namespace GHelper.Input
                 case "touchscreen":
                     var touchscreenStatus = TouchscreenHelper.ToggleTouchscreen();
                     if (touchscreenStatus is not null)
-                        Program.toast.RunToast(Properties.Strings.Touchscreen + " " + ((bool)touchscreenStatus ? Properties.Strings.On : Properties.Strings.Off), ToastIcon.Touchpad);
+                        Program.toast.RunToast(GHelper.app.Properties.Strings.Touchscreen + " " + ((bool)touchscreenStatus ? GHelper.app.Properties.Strings.On : GHelper.app.Properties.Strings.Off), ToastIcon.Touchpad);
                     break;
                 default:
                     break;
@@ -606,7 +606,7 @@ namespace GHelper.Input
         {
             if (hotkey || !AppConfig.IsHardwareTouchpadToggle()) ToggleTouchpad();
             Thread.Sleep(200);
-            Program.toast.RunToast(GetTouchpadState() ? Properties.Strings.On : Properties.Strings.Off, ToastIcon.Touchpad);
+            Program.toast.RunToast(GetTouchpadState() ? GHelper.app.Properties.Strings.On : GHelper.app.Properties.Strings.Off, ToastIcon.Touchpad);
         }
 
         static void ToggleTouchpad()
@@ -625,7 +625,7 @@ namespace GHelper.Input
             AppConfig.Set("arrow_lock", arLock);
 
             Program.settingsForm.BeginInvoke(Program.inputDispatcher.RegisterKeys);
-            Program.toast.RunToast("Arrow-Lock " + (arLock == 1 ? Properties.Strings.On : Properties.Strings.Off), ToastIcon.FnLock);
+            Program.toast.RunToast("Arrow-Lock " + (arLock == 1 ? GHelper.app.Properties.Strings.On : GHelper.app.Properties.Strings.Off), ToastIcon.FnLock);
         }
 
         public static void HardwareFnLock(bool fnLock)
@@ -646,7 +646,7 @@ namespace GHelper.Input
 
             Program.settingsForm.BeginInvoke(Program.settingsForm.VisualiseFnLock);
 
-            Program.toast.RunToast(fnLock ? Properties.Strings.FnLockOn : Properties.Strings.FnLockOff, ToastIcon.FnLock);
+            Program.toast.RunToast(fnLock ? GHelper.app.Properties.Strings.FnLockOn : GHelper.app.Properties.Strings.FnLockOff, ToastIcon.FnLock);
         }
 
         public static void TabletMode()
@@ -760,7 +760,7 @@ namespace GHelper.Input
 
         }
 
-        // Asus Optimization service Events 
+        // Asus Optimization service Events
         static void HandleOptimizationEvent(int EventID)
         {
             switch (EventID)
@@ -877,7 +877,7 @@ namespace GHelper.Input
 
             if (!OptimizationService.IsOSDRunning())
             {
-                string[] backlightNames = new string[] { Properties.Strings.BacklightOff, Properties.Strings.BacklightLow, Properties.Strings.BacklightMid, Properties.Strings.BacklightMax };
+                string[] backlightNames = new string[] { GHelper.app.Properties.Strings.BacklightOff, GHelper.app.Properties.Strings.BacklightLow, GHelper.app.Properties.Strings.BacklightMid, GHelper.app.Properties.Strings.BacklightMax };
                 Program.toast.RunToast(backlightNames[backlight], delta > 0 ? ToastIcon.BacklightUp : ToastIcon.BacklightDown);
             }
 

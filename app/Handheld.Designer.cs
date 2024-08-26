@@ -114,9 +114,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)trackVibra).BeginInit();
             SuspendLayout();
-            // 
+            //
             // panelDeadzones
-            // 
+            //
             panelDeadzones.Controls.Add(panelRight);
             panelDeadzones.Controls.Add(panelLeft);
             panelDeadzones.Dock = DockStyle.Top;
@@ -124,9 +124,9 @@
             panelDeadzones.Name = "panelDeadzones";
             panelDeadzones.Size = new Size(1123, 258);
             panelDeadzones.TabIndex = 0;
-            // 
+            //
             // panelRight
-            // 
+            //
             panelRight.AutoSize = true;
             panelRight.Controls.Add(panelRT);
             panelRight.Controls.Add(panelRS);
@@ -136,9 +136,9 @@
             panelRight.Name = "panelRight";
             panelRight.Size = new Size(560, 258);
             panelRight.TabIndex = 48;
-            // 
+            //
             // panelRT
-            // 
+            //
             panelRT.AutoSize = true;
             panelRT.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panelRT.Controls.Add(pictureBox4);
@@ -153,10 +153,10 @@
             panelRT.Name = "panelRT";
             panelRT.Size = new Size(560, 124);
             panelRT.TabIndex = 51;
-            // 
+            //
             // pictureBox4
-            // 
-            pictureBox4.BackgroundImage = Properties.Resources.icons8_xbox_rt_32;
+            //
+            pictureBox4.BackgroundImage = GHelper.app.Properties.Resources.icons8_xbox_rt_32;
             pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox4.ErrorImage = null;
             pictureBox4.InitialImage = null;
@@ -166,9 +166,9 @@
             pictureBox4.Size = new Size(32, 32);
             pictureBox4.TabIndex = 43;
             pictureBox4.TabStop = false;
-            // 
+            //
             // trackRTMax
-            // 
+            //
             trackRTMax.Location = new Point(272, 48);
             trackRTMax.Margin = new Padding(4, 2, 4, 2);
             trackRTMax.Maximum = 100;
@@ -180,9 +180,9 @@
             trackRTMax.TickFrequency = 5;
             trackRTMax.TickStyle = TickStyle.TopLeft;
             trackRTMax.Value = 100;
-            // 
+            //
             // labelRT
-            // 
+            //
             labelRT.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelRT.Location = new Point(363, 13);
             labelRT.Margin = new Padding(4, 0, 4, 0);
@@ -191,9 +191,9 @@
             labelRT.TabIndex = 29;
             labelRT.Text = "0 - 100%";
             labelRT.TextAlign = ContentAlignment.TopRight;
-            // 
+            //
             // trackRTMin
-            // 
+            //
             trackRTMin.LargeChange = 100;
             trackRTMin.Location = new Point(6, 48);
             trackRTMin.Margin = new Padding(4, 2, 4, 2);
@@ -205,9 +205,9 @@
             trackRTMin.TabIndex = 18;
             trackRTMin.TickFrequency = 5;
             trackRTMin.TickStyle = TickStyle.TopLeft;
-            // 
+            //
             // labelRTTitle
-            // 
+            //
             labelRTTitle.AutoSize = true;
             labelRTTitle.Location = new Point(56, 16);
             labelRTTitle.Margin = new Padding(4, 0, 4, 0);
@@ -215,9 +215,9 @@
             labelRTTitle.Size = new Size(276, 32);
             labelRTTitle.TabIndex = 17;
             labelRTTitle.Text = "Right Trigger Deadzones";
-            // 
+            //
             // panelRS
-            // 
+            //
             panelRS.AutoSize = true;
             panelRS.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panelRS.Controls.Add(pictureBox1);
@@ -232,10 +232,10 @@
             panelRS.Name = "panelRS";
             panelRS.Size = new Size(560, 124);
             panelRS.TabIndex = 50;
-            // 
+            //
             // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = Properties.Resources.icons8_joystick_32;
+            //
+            pictureBox1.BackgroundImage = GHelper.app.Properties.Resources.icons8_joystick_32;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.ErrorImage = null;
             pictureBox1.InitialImage = null;
@@ -245,9 +245,9 @@
             pictureBox1.Size = new Size(32, 32);
             pictureBox1.TabIndex = 43;
             pictureBox1.TabStop = false;
-            // 
+            //
             // trackRSMax
-            // 
+            //
             trackRSMax.Location = new Point(272, 48);
             trackRSMax.Margin = new Padding(4, 2, 4, 2);
             trackRSMax.Maximum = 100;
@@ -259,9 +259,9 @@
             trackRSMax.TickFrequency = 5;
             trackRSMax.TickStyle = TickStyle.TopLeft;
             trackRSMax.Value = 100;
-            // 
+            //
             // labelRS
-            // 
+            //
             labelRS.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelRS.Location = new Point(363, 13);
             labelRS.Margin = new Padding(4, 0, 4, 0);
@@ -270,9 +270,9 @@
             labelRS.TabIndex = 29;
             labelRS.Text = "0 - 100%";
             labelRS.TextAlign = ContentAlignment.TopRight;
-            // 
+            //
             // trackRSMin
-            // 
+            //
             trackRSMin.LargeChange = 100;
             trackRSMin.Location = new Point(6, 48);
             trackRSMin.Margin = new Padding(4, 2, 4, 2);
@@ -284,9 +284,9 @@
             trackRSMin.TabIndex = 18;
             trackRSMin.TickFrequency = 5;
             trackRSMin.TickStyle = TickStyle.TopLeft;
-            // 
+            //
             // labelRSTitle
-            // 
+            //
             labelRSTitle.AutoSize = true;
             labelRSTitle.Location = new Point(56, 14);
             labelRSTitle.Margin = new Padding(4, 0, 4, 0);
@@ -294,9 +294,9 @@
             labelRSTitle.Size = new Size(251, 32);
             labelRSTitle.TabIndex = 17;
             labelRSTitle.Text = "Right Stick Deadzones";
-            // 
+            //
             // panelLeft
-            // 
+            //
             panelLeft.AutoSize = true;
             panelLeft.Controls.Add(panelLT);
             panelLeft.Controls.Add(panelLS);
@@ -308,9 +308,9 @@
             panelLeft.Padding = new Padding(0, 0, 0, 18);
             panelLeft.Size = new Size(560, 258);
             panelLeft.TabIndex = 47;
-            // 
+            //
             // panelLT
-            // 
+            //
             panelLT.AutoSize = true;
             panelLT.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panelLT.Controls.Add(pictureBox2);
@@ -325,10 +325,10 @@
             panelLT.Name = "panelLT";
             panelLT.Size = new Size(560, 124);
             panelLT.TabIndex = 51;
-            // 
+            //
             // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = Properties.Resources.icons8_xbox_lt_32;
+            //
+            pictureBox2.BackgroundImage = GHelper.app.Properties.Resources.icons8_xbox_lt_32;
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox2.ErrorImage = null;
             pictureBox2.InitialImage = null;
@@ -338,9 +338,9 @@
             pictureBox2.Size = new Size(32, 32);
             pictureBox2.TabIndex = 42;
             pictureBox2.TabStop = false;
-            // 
+            //
             // trackLTMax
-            // 
+            //
             trackLTMax.Location = new Point(272, 48);
             trackLTMax.Margin = new Padding(4, 2, 4, 2);
             trackLTMax.Maximum = 100;
@@ -352,9 +352,9 @@
             trackLTMax.TickFrequency = 5;
             trackLTMax.TickStyle = TickStyle.TopLeft;
             trackLTMax.Value = 100;
-            // 
+            //
             // labelLT
-            // 
+            //
             labelLT.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelLT.Location = new Point(363, 13);
             labelLT.Margin = new Padding(4, 0, 4, 0);
@@ -363,9 +363,9 @@
             labelLT.TabIndex = 29;
             labelLT.Text = "0 - 100%";
             labelLT.TextAlign = ContentAlignment.TopRight;
-            // 
+            //
             // trackLTMin
-            // 
+            //
             trackLTMin.LargeChange = 100;
             trackLTMin.Location = new Point(6, 48);
             trackLTMin.Margin = new Padding(4, 2, 4, 2);
@@ -377,9 +377,9 @@
             trackLTMin.TabIndex = 18;
             trackLTMin.TickFrequency = 5;
             trackLTMin.TickStyle = TickStyle.TopLeft;
-            // 
+            //
             // labelLTTitle
-            // 
+            //
             labelLTTitle.AutoSize = true;
             labelLTTitle.Location = new Point(60, 14);
             labelLTTitle.Margin = new Padding(4, 0, 4, 0);
@@ -387,9 +387,9 @@
             labelLTTitle.Size = new Size(260, 32);
             labelLTTitle.TabIndex = 17;
             labelLTTitle.Text = "Left Trigger Deadzones";
-            // 
+            //
             // panelLS
-            // 
+            //
             panelLS.AutoSize = true;
             panelLS.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panelLS.Controls.Add(pictureBox3);
@@ -404,10 +404,10 @@
             panelLS.Name = "panelLS";
             panelLS.Size = new Size(560, 124);
             panelLS.TabIndex = 48;
-            // 
+            //
             // pictureBox3
-            // 
-            pictureBox3.BackgroundImage = Properties.Resources.icons8_joystick_32;
+            //
+            pictureBox3.BackgroundImage = GHelper.app.Properties.Resources.icons8_joystick_32;
             pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox3.ErrorImage = null;
             pictureBox3.InitialImage = null;
@@ -417,9 +417,9 @@
             pictureBox3.Size = new Size(32, 32);
             pictureBox3.TabIndex = 42;
             pictureBox3.TabStop = false;
-            // 
+            //
             // trackLSMax
-            // 
+            //
             trackLSMax.Location = new Point(272, 48);
             trackLSMax.Margin = new Padding(4, 2, 4, 2);
             trackLSMax.Maximum = 100;
@@ -431,9 +431,9 @@
             trackLSMax.TickFrequency = 5;
             trackLSMax.TickStyle = TickStyle.TopLeft;
             trackLSMax.Value = 100;
-            // 
+            //
             // labelLS
-            // 
+            //
             labelLS.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelLS.Location = new Point(363, 13);
             labelLS.Margin = new Padding(4, 0, 4, 0);
@@ -442,9 +442,9 @@
             labelLS.TabIndex = 29;
             labelLS.Text = "0 - 100%";
             labelLS.TextAlign = ContentAlignment.TopRight;
-            // 
+            //
             // trackLSMin
-            // 
+            //
             trackLSMin.LargeChange = 100;
             trackLSMin.Location = new Point(6, 48);
             trackLSMin.Margin = new Padding(4, 2, 4, 2);
@@ -456,9 +456,9 @@
             trackLSMin.TabIndex = 18;
             trackLSMin.TickFrequency = 5;
             trackLSMin.TickStyle = TickStyle.TopLeft;
-            // 
+            //
             // labelLSTitle
-            // 
+            //
             labelLSTitle.AutoSize = true;
             labelLSTitle.Location = new Point(56, 13);
             labelLSTitle.Margin = new Padding(4, 0, 4, 0);
@@ -466,9 +466,9 @@
             labelLSTitle.Size = new Size(235, 32);
             labelLSTitle.TabIndex = 17;
             labelLSTitle.Text = "Left Stick Deadzones";
-            // 
+            //
             // buttonReset
-            // 
+            //
             buttonReset.Activated = false;
             buttonReset.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             buttonReset.BackColor = SystemColors.ControlLight;
@@ -483,9 +483,9 @@
             buttonReset.TabIndex = 55;
             buttonReset.Text = "Reset";
             buttonReset.UseVisualStyleBackColor = false;
-            // 
+            //
             // panelBindings
-            // 
+            //
             panelBindings.Controls.Add(panelBinding);
             panelBindings.Controls.Add(buttonView);
             panelBindings.Controls.Add(buttonLS);
@@ -511,9 +511,9 @@
             panelBindings.Name = "panelBindings";
             panelBindings.Size = new Size(1123, 517);
             panelBindings.TabIndex = 1;
-            // 
+            //
             // panelBinding
-            // 
+            //
             panelBinding.Controls.Add(labelBinding);
             panelBinding.Controls.Add(labelSecondary);
             panelBinding.Controls.Add(labelPrimary);
@@ -524,9 +524,9 @@
             panelBinding.Size = new Size(400, 186);
             panelBinding.TabIndex = 37;
             panelBinding.Visible = false;
-            // 
+            //
             // labelBinding
-            // 
+            //
             labelBinding.AutoSize = true;
             labelBinding.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelBinding.Location = new Point(2, 11);
@@ -534,27 +534,27 @@
             labelBinding.Size = new Size(183, 32);
             labelBinding.TabIndex = 31;
             labelBinding.Text = "Binding: Menu";
-            // 
+            //
             // labelSecondary
-            // 
+            //
             labelSecondary.AutoSize = true;
             labelSecondary.Location = new Point(2, 122);
             labelSecondary.Name = "labelSecondary";
             labelSecondary.Size = new Size(125, 32);
             labelSecondary.TabIndex = 30;
             labelSecondary.Text = "Secondary";
-            // 
+            //
             // labelPrimary
-            // 
+            //
             labelPrimary.AutoSize = true;
             labelPrimary.Location = new Point(2, 63);
             labelPrimary.Name = "labelPrimary";
             labelPrimary.Size = new Size(94, 32);
             labelPrimary.TabIndex = 29;
             labelPrimary.Text = "Primary";
-            // 
+            //
             // comboSecondary
-            // 
+            //
             comboSecondary.BorderColor = Color.White;
             comboSecondary.ButtonColor = Color.FromArgb(255, 255, 255);
             comboSecondary.FlatStyle = FlatStyle.Flat;
@@ -566,9 +566,9 @@
             comboSecondary.Name = "comboSecondary";
             comboSecondary.Size = new Size(254, 40);
             comboSecondary.TabIndex = 28;
-            // 
+            //
             // comboPrimary
-            // 
+            //
             comboPrimary.BorderColor = Color.White;
             comboPrimary.ButtonColor = Color.FromArgb(255, 255, 255);
             comboPrimary.FlatStyle = FlatStyle.Flat;
@@ -580,9 +580,9 @@
             comboPrimary.Name = "comboPrimary";
             comboPrimary.Size = new Size(254, 40);
             comboPrimary.TabIndex = 27;
-            // 
+            //
             // buttonView
-            // 
+            //
             buttonView.Activated = false;
             buttonView.BackColor = SystemColors.ControlLight;
             buttonView.BorderColor = Color.Transparent;
@@ -600,9 +600,9 @@
             buttonView.Text = "View";
             buttonView.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonView.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonLS
-            // 
+            //
             buttonLS.Activated = false;
             buttonLS.BackColor = SystemColors.ControlLight;
             buttonLS.BorderColor = Color.Transparent;
@@ -620,9 +620,9 @@
             buttonLS.Text = "LStick";
             buttonLS.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonLS.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonLT
-            // 
+            //
             buttonLT.Activated = false;
             buttonLT.BackColor = SystemColors.ControlLight;
             buttonLT.BorderColor = Color.Transparent;
@@ -640,9 +640,9 @@
             buttonLT.Text = "LTrigger";
             buttonLT.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonLT.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonLB
-            // 
+            //
             buttonLB.Activated = false;
             buttonLB.BackColor = SystemColors.ControlLight;
             buttonLB.BorderColor = Color.Transparent;
@@ -660,9 +660,9 @@
             buttonLB.Text = "LBumper";
             buttonLB.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonLB.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonDPR
-            // 
+            //
             buttonDPR.Activated = false;
             buttonDPR.BackColor = SystemColors.ControlLight;
             buttonDPR.BorderColor = Color.Transparent;
@@ -680,9 +680,9 @@
             buttonDPR.Text = "DpadRight";
             buttonDPR.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonDPR.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonDPL
-            // 
+            //
             buttonDPL.Activated = false;
             buttonDPL.BackColor = SystemColors.ControlLight;
             buttonDPL.BorderColor = Color.Transparent;
@@ -700,9 +700,9 @@
             buttonDPL.Text = "DpadLeft";
             buttonDPL.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonDPL.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonDPD
-            // 
+            //
             buttonDPD.Activated = false;
             buttonDPD.BackColor = SystemColors.ControlLight;
             buttonDPD.BorderColor = Color.Transparent;
@@ -720,9 +720,9 @@
             buttonDPD.Text = "DpadDown";
             buttonDPD.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonDPD.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonDPU
-            // 
+            //
             buttonDPU.Activated = false;
             buttonDPU.BackColor = SystemColors.ControlLight;
             buttonDPU.BorderColor = Color.Transparent;
@@ -740,9 +740,9 @@
             buttonDPU.Text = "DpadUp";
             buttonDPU.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonDPU.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonM2
-            // 
+            //
             buttonM2.Activated = false;
             buttonM2.BackColor = SystemColors.ControlLight;
             buttonM2.BorderColor = Color.Transparent;
@@ -760,9 +760,9 @@
             buttonM2.Text = "M2";
             buttonM2.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonM2.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonM1
-            // 
+            //
             buttonM1.Activated = false;
             buttonM1.BackColor = SystemColors.ControlLight;
             buttonM1.BorderColor = Color.Transparent;
@@ -780,9 +780,9 @@
             buttonM1.Text = "M1";
             buttonM1.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonM1.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonRS
-            // 
+            //
             buttonRS.Activated = false;
             buttonRS.BackColor = SystemColors.ControlLight;
             buttonRS.BorderColor = Color.Transparent;
@@ -800,9 +800,9 @@
             buttonRS.Text = "RStick";
             buttonRS.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonRS.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonMenu
-            // 
+            //
             buttonMenu.Activated = false;
             buttonMenu.BackColor = SystemColors.ControlLight;
             buttonMenu.BorderColor = Color.Transparent;
@@ -820,9 +820,9 @@
             buttonMenu.Text = "Menu";
             buttonMenu.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonMenu.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonRT
-            // 
+            //
             buttonRT.Activated = false;
             buttonRT.BackColor = SystemColors.ControlLight;
             buttonRT.BorderColor = Color.Transparent;
@@ -840,9 +840,9 @@
             buttonRT.Text = "RTrigger";
             buttonRT.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonRT.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonRB
-            // 
+            //
             buttonRB.Activated = false;
             buttonRB.BackColor = SystemColors.ControlLight;
             buttonRB.BorderColor = Color.Transparent;
@@ -860,9 +860,9 @@
             buttonRB.Text = "RBumper";
             buttonRB.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonRB.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonB
-            // 
+            //
             buttonB.Activated = false;
             buttonB.BackColor = SystemColors.ControlLight;
             buttonB.BorderColor = Color.Transparent;
@@ -880,9 +880,9 @@
             buttonB.Text = "B";
             buttonB.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonB.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonA
-            // 
+            //
             buttonA.Activated = false;
             buttonA.BackColor = SystemColors.ControlLight;
             buttonA.BorderColor = Color.Transparent;
@@ -900,9 +900,9 @@
             buttonA.Text = "A";
             buttonA.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonA.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonY
-            // 
+            //
             buttonY.Activated = false;
             buttonY.BackColor = SystemColors.ControlLight;
             buttonY.BorderColor = Color.Transparent;
@@ -920,9 +920,9 @@
             buttonY.Text = "Y";
             buttonY.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonY.UseVisualStyleBackColor = false;
-            // 
+            //
             // buttonX
-            // 
+            //
             buttonX.Activated = false;
             buttonX.BackColor = SystemColors.ControlLight;
             buttonX.BorderColor = Color.Transparent;
@@ -940,19 +940,19 @@
             buttonX.Text = "X";
             buttonX.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonX.UseVisualStyleBackColor = false;
-            // 
+            //
             // pictureAlly
-            // 
-            pictureAlly.BackgroundImage = Properties.Resources.ally;
+            //
+            pictureAlly.BackgroundImage = GHelper.app.Properties.Resources.ally;
             pictureAlly.BackgroundImageLayout = ImageLayout.Zoom;
             pictureAlly.Location = new Point(185, 97);
             pictureAlly.Name = "pictureAlly";
             pictureAlly.Size = new Size(767, 354);
             pictureAlly.TabIndex = 0;
             pictureAlly.TabStop = false;
-            // 
+            //
             // panelVibra
-            // 
+            //
             panelVibra.AutoSize = true;
             panelVibra.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panelVibra.Controls.Add(checkController);
@@ -968,9 +968,9 @@
             panelVibra.Name = "panelVibra";
             panelVibra.Size = new Size(1123, 124);
             panelVibra.TabIndex = 47;
-            // 
+            //
             // checkController
-            // 
+            //
             checkController.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             checkController.AutoSize = true;
             checkController.BackColor = SystemColors.ControlLight;
@@ -982,10 +982,10 @@
             checkController.TabIndex = 56;
             checkController.Text = "Disable Controller";
             checkController.UseVisualStyleBackColor = false;
-            // 
+            //
             // pictureBox5
-            // 
-            pictureBox5.BackgroundImage = Properties.Resources.icons8_soonvibes_32;
+            //
+            pictureBox5.BackgroundImage = GHelper.app.Properties.Resources.icons8_soonvibes_32;
             pictureBox5.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox5.ErrorImage = null;
             pictureBox5.InitialImage = null;
@@ -995,9 +995,9 @@
             pictureBox5.Size = new Size(32, 32);
             pictureBox5.TabIndex = 45;
             pictureBox5.TabStop = false;
-            // 
+            //
             // labelVibra
-            // 
+            //
             labelVibra.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelVibra.Location = new Point(408, 14);
             labelVibra.Margin = new Padding(4, 0, 4, 0);
@@ -1006,9 +1006,9 @@
             labelVibra.TabIndex = 44;
             labelVibra.Text = "100%";
             labelVibra.TextAlign = ContentAlignment.TopRight;
-            // 
+            //
             // labelVibraTitle
-            // 
+            //
             labelVibraTitle.AutoSize = true;
             labelVibraTitle.Location = new Point(54, 14);
             labelVibraTitle.Margin = new Padding(4, 0, 4, 0);
@@ -1016,9 +1016,9 @@
             labelVibraTitle.Size = new Size(209, 32);
             labelVibraTitle.TabIndex = 43;
             labelVibraTitle.Text = "Vibration Strength";
-            // 
+            //
             // trackVibra
-            // 
+            //
             trackVibra.Location = new Point(6, 48);
             trackVibra.Margin = new Padding(4, 2, 4, 2);
             trackVibra.Maximum = 100;
@@ -1028,9 +1028,9 @@
             trackVibra.TickFrequency = 5;
             trackVibra.TickStyle = TickStyle.TopLeft;
             trackVibra.Value = 100;
-            // 
+            //
             // Handheld
-            // 
+            //
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;

@@ -90,7 +90,7 @@ namespace GHelper.Display
             int fhd = Program.acpi.DeviceGet(AsusACPI.ScreenFHD);
             Logger.WriteLine($"FHD Toggle: {fhd}");
 
-            DialogResult dialogResult = MessageBox.Show("Changing display mode requires reboot", Properties.Strings.AlertUltimateTitle, MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Changing display mode requires reboot", GHelper.app.Properties.Strings.AlertUltimateTitle, MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 Program.acpi.DeviceSet(AsusACPI.ScreenFHD, (fhd == 1) ? 0 : 1, "FHD");
@@ -114,11 +114,11 @@ namespace GHelper.Display
                 {
                     case 1:
                         miniled = 0;
-                        name = Properties.Strings.OneZone;
+                        name = GHelper.app.Properties.Strings.OneZone;
                         break;
                     default:
                         miniled = 1;
-                        name = Properties.Strings.Multizone;
+                        name = GHelper.app.Properties.Strings.Multizone;
                         break;
                 }
             }
@@ -128,15 +128,15 @@ namespace GHelper.Display
                 {
                     case 1:
                         miniled = 2;
-                        name = Properties.Strings.OneZone;
+                        name = GHelper.app.Properties.Strings.OneZone;
                         break;
                     case 2:
                         miniled = 0;
-                        name = Properties.Strings.Multizone;
+                        name = GHelper.app.Properties.Strings.Multizone;
                         break;
                     default:
                         miniled = 1;
-                        name = Properties.Strings.MultizoneStrong;
+                        name = GHelper.app.Properties.Strings.MultizoneStrong;
                         break;
                 }
             }

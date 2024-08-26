@@ -23,7 +23,7 @@ namespace GHelper.Helpers
                         catch (Exception ex)
                         {
                             Logger.WriteLine(ex.ToString());
-                            MessageBox.Show(Properties.Strings.AppAlreadyRunningText, Properties.Strings.AppAlreadyRunning, MessageBoxButtons.OK);
+                            MessageBox.Show(GHelper.app.Properties.Strings.AppAlreadyRunningText, GHelper.app.Properties.Strings.AppAlreadyRunning, MessageBoxButtons.OK);
                             Application.Exit();
                             return;
                         }

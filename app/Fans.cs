@@ -45,28 +45,28 @@ namespace GHelper
             //comboModes.Size = new Size(comboModes.Width, (int)dpi * 18);
             comboModes.ClientSize = new Size(comboModes.Width, comboModes.Height - 4);
 
-            Text = Properties.Strings.FansAndPower;
-            labelPowerLimits.Text = Properties.Strings.PowerLimits;
-            checkApplyPower.Text = Properties.Strings.ApplyPowerLimits;
+            Text = GHelper.app.Properties.Strings.FansAndPower;
+            labelPowerLimits.Text = GHelper.app.Properties.Strings.PowerLimits;
+            checkApplyPower.Text = GHelper.app.Properties.Strings.ApplyPowerLimits;
 
-            labelFans.Text = "BIOS " + Properties.Strings.FanCurves;
-            labelBoost.Text = Properties.Strings.CPUBoost;
-            buttonReset.Text = Properties.Strings.FactoryDefaults;
-            checkApplyFans.Text = Properties.Strings.ApplyFanCurve;
+            labelFans.Text = "BIOS " + GHelper.app.Properties.Strings.FanCurves;
+            labelBoost.Text = GHelper.app.Properties.Strings.CPUBoost;
+            buttonReset.Text = GHelper.app.Properties.Strings.FactoryDefaults;
+            checkApplyFans.Text = GHelper.app.Properties.Strings.ApplyFanCurve;
 
-            labelGPU.Text = Properties.Strings.GPUSettings;
+            labelGPU.Text = GHelper.app.Properties.Strings.GPUSettings;
 
-            labelGPUCoreTitle.Text = Properties.Strings.GPUCoreClockOffset;
-            labelGPUMemoryTitle.Text = Properties.Strings.GPUMemoryClockOffset;
-            labelGPUBoostTitle.Text = Properties.Strings.GPUBoost;
-            labelGPUTempTitle.Text = Properties.Strings.GPUTempTarget;
-            labelGPUPowerTitle.Text = Properties.Strings.GPUPower;
+            labelGPUCoreTitle.Text = GHelper.app.Properties.Strings.GPUCoreClockOffset;
+            labelGPUMemoryTitle.Text = GHelper.app.Properties.Strings.GPUMemoryClockOffset;
+            labelGPUBoostTitle.Text = GHelper.app.Properties.Strings.GPUBoost;
+            labelGPUTempTitle.Text = GHelper.app.Properties.Strings.GPUTempTarget;
+            labelGPUPowerTitle.Text = GHelper.app.Properties.Strings.GPUPower;
 
-            labelRisky.Text = Properties.Strings.UndervoltingRisky;
-            buttonApplyAdvanced.Text = Properties.Strings.Apply;
-            checkApplyUV.Text = Properties.Strings.AutoApply;
+            labelRisky.Text = GHelper.app.Properties.Strings.UndervoltingRisky;
+            buttonApplyAdvanced.Text = GHelper.app.Properties.Strings.Apply;
+            checkApplyUV.Text = GHelper.app.Properties.Strings.AutoApply;
 
-            buttonCalibrate.Text = Properties.Strings.Calibrate;
+            buttonCalibrate.Text = GHelper.app.Properties.Strings.Calibrate;
 
             InitTheme(true);
 
@@ -310,7 +310,7 @@ namespace GHelper
                         CPUName = obj["Name"].ToString();
                         Invoke(delegate
                         {
-                            Text = Properties.Strings.FansAndPower + " - " + CPUName;
+                            Text = GHelper.app.Properties.Strings.FansAndPower + " - " + CPUName;
                         });
                     }
             });
@@ -730,7 +730,7 @@ namespace GHelper
                 chart.ChartAreas[0].AxisY.CustomLabels.Add(i - 2, i + 2, ChartYLabel(i, device));
             }
 
-            //chart.ChartAreas[0].AxisY.CustomLabels.Add(fansMax -2, fansMax + 2, Properties.Strings.RPM);
+            //chart.ChartAreas[0].AxisY.CustomLabels.Add(fansMax -2, fansMax + 2, GHelper.app.Properties.Strings.RPM);
             chart.ChartAreas[0].AxisY.Interval = 10;
         }
 
@@ -743,13 +743,13 @@ namespace GHelper
             switch (device)
             {
                 case AsusFan.CPU:
-                    title = Properties.Strings.FanProfileCPU + scale;
+                    title = GHelper.app.Properties.Strings.FanProfileCPU + scale;
                     break;
                 case AsusFan.GPU:
-                    title = Properties.Strings.FanProfileGPU + scale;
+                    title = GHelper.app.Properties.Strings.FanProfileGPU + scale;
                     break;
                 case AsusFan.Mid:
-                    title = Properties.Strings.FanProfileMid + scale;
+                    title = GHelper.app.Properties.Strings.FanProfileMid + scale;
                     break;
                 case AsusFan.XGM:
                     title = "XG Mobile" + scale;
@@ -1274,7 +1274,7 @@ namespace GHelper
                         tip = true;
                     }
 
-                    labelTip.Text = Math.Floor(curPoint.XValue) + "C, " + ChartYLabel((int)curPoint.YValues[0], device, " " + Properties.Strings.RPM);
+                    labelTip.Text = Math.Floor(curPoint.XValue) + "C, " + ChartYLabel((int)curPoint.YValues[0], device, " " + GHelper.app.Properties.Strings.RPM);
                     labelTip.Top = e.Y + ((Control)sender).Top;
                     labelTip.Left = Math.Min(chart.Width - labelTip.Width - 20, e.X - 50);
 

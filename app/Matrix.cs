@@ -25,13 +25,13 @@ namespace GHelper
             InitializeComponent();
             InitTheme(true);
 
-            Text = Properties.Strings.AnimeMatrix;
-            labelZoomTitle.Text = Properties.Strings.Zoom;
-            labelScaling.Text = Properties.Strings.ScalingQuality;
-            labelRotation.Text = Properties.Strings.ImageRotation;
-            labelContrastTitle.Text = Properties.Strings.Contrast;
-            buttonPicture.Text = Properties.Strings.PictureGif;
-            buttonReset.Text = Properties.Strings.Reset;
+            Text = GHelper.app.Properties.Strings.AnimeMatrix;
+            labelZoomTitle.Text = GHelper.app.Properties.Strings.Zoom;
+            labelScaling.Text = GHelper.app.Properties.Strings.ScalingQuality;
+            labelRotation.Text = GHelper.app.Properties.Strings.ImageRotation;
+            labelContrastTitle.Text = GHelper.app.Properties.Strings.Contrast;
+            buttonPicture.Text = GHelper.app.Properties.Strings.PictureGif;
+            buttonReset.Text = GHelper.app.Properties.Strings.Reset;
 
             Shown += Matrix_Shown;
             FormClosing += Matrix_FormClosed;

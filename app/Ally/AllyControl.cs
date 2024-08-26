@@ -5,7 +5,7 @@ using GHelper.Mode;
 using GHelper.USB;
 using HidSharp;
 using System.Text;
-
+using GHelper;
 
 
 namespace GHelper.Ally

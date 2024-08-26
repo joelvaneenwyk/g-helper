@@ -39,15 +39,15 @@ namespace GHelper
 
             updatesCount = 0;
             labelUpdates.ForeColor = colorEco;
-            labelUpdates.Text = Properties.Strings.NoNewUpdates;
+            labelUpdates.Text = GHelper.app.Properties.Strings.NoNewUpdates;
 
             panelBios.AccessibleRole = AccessibleRole.Grouping;
-            panelBios.AccessibleName = Properties.Strings.NoNewUpdates;
+            panelBios.AccessibleName = GHelper.app.Properties.Strings.NoNewUpdates;
             panelBios.TabStop = true;
 
-            Text = Properties.Strings.BiosAndDriverUpdates + ": " + model + " " + bios;
+            Text = GHelper.app.Properties.Strings.BiosAndDriverUpdates + ": " + model + " " + bios;
             labelBIOS.Text = "BIOS";
-            labelDrivers.Text = Properties.Strings.DriverAndSoftware;
+            labelDrivers.Text = GHelper.app.Properties.Strings.DriverAndSoftware;
 
             SuspendLayout();
 
@@ -178,7 +178,7 @@ namespace GHelper
 
                 if (newer == DRIVER_NEWER)
                 {
-                    label.AccessibleName = label.AccessibleName + Properties.Strings.NewUpdates;
+                    label.AccessibleName = label.AccessibleName + GHelper.app.Properties.Strings.NewUpdates;
                     label.Font = new Font(label.Font, FontStyle.Underline | FontStyle.Bold);
                     label.LinkColor = colorTurbo;
                 }
@@ -208,7 +208,7 @@ namespace GHelper
         {
             Invoke(delegate
             {
-                labelUpdates.Text = $"{Properties.Strings.NewUpdates}: {updatesCount}";
+                labelUpdates.Text = $"{GHelper.app.Properties.Strings.NewUpdates}: {updatesCount}";
                 labelUpdates.ForeColor = colorTurbo;
                 labelUpdates.Font = new Font(labelUpdates.Font, FontStyle.Bold);
 

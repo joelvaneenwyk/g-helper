@@ -18,7 +18,7 @@ namespace GHelper.AutoUpdate
         {
             settings = settingsForm;
             var appVersion = new Version(Assembly.GetExecutingAssembly().GetName().Version.ToString());
-            settings.SetVersionLabel(Properties.Strings.VersionLabel + $": {appVersion.Major}.{appVersion.Minor}.{appVersion.Build}");
+            settings.SetVersionLabel(GHelper.app.Properties.Strings.VersionLabel + $": {appVersion.Major}.{appVersion.Minor}.{appVersion.Build}");
         }
 
         public void CheckForUpdates()
@@ -75,16 +75,16 @@ namespace GHelper.AutoUpdate
 
                     var gitVersion = new Version(tag);
                     var appVersion = new Version(Assembly.GetExecutingAssembly().GetName().Version.ToString());
-                    //appVersion = new Version("0.50.0.0"); 
+                    //appVersion = new Version("0.50.0.0");
 
                     if (gitVersion.CompareTo(appVersion) > 0)
                     {
                         versionUrl = url;
-                        settings.SetVersionLabel(Properties.Strings.DownloadUpdate + ": " + tag, true);
+                        settings.SetVersionLabel(GHelper.app.Properties.Strings.DownloadUpdate + ": " + tag, true);
 
                         if (AppConfig.GetString("skip_version") != tag)
                         {
-                            DialogResult dialogResult = MessageBox.Show(Properties.Strings.DownloadUpdate + ": G-Helper " + tag + "?", "Update", MessageBoxButtons.YesNo);
+                            DialogResult dialogResult = MessageBox.Show(GHelper.app.Properties.Strings.DownloadUpdate + ": G-Helper " + tag + "?", "Update", MessageBoxButtons.YesNo);
                             if (dialogResult == DialogResult.Yes)
                                 AutoUpdate(url);
                             else

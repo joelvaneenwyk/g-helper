@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GHelper.Properties {
+namespace GHelper.app.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace GHelper.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GHelper.Properties.Strings", typeof(Strings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GHelper.app.Properties.Strings", typeof(Strings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -1575,7 +1575,7 @@ namespace GHelper.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Switch to Eco on battery and to Standard when plugged.
+        ///   Looks up a localized string similar to Switch to Eco on battery and to Standard when plugged in.
         /// </summary>
         internal static string OptimizedGPUTooltip {
             get {

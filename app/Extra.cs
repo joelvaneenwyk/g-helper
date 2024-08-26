@@ -24,27 +24,27 @@ namespace GHelper
             Dictionary<string, string> customActions = new Dictionary<string, string>
             {
               {"", EMPTY},
-              {"mute", Properties.Strings.VolumeMute},
-              {"screenshot", Properties.Strings.PrintScreen},
-              {"play", Properties.Strings.PlayPause},
-              {"aura", Properties.Strings.ToggleAura},
-              {"performance", Properties.Strings.PerformanceMode},
-              {"screen", Properties.Strings.ToggleScreen},
-              {"lock", Properties.Strings.LockScreen},
-              {"miniled", Properties.Strings.ToggleMiniled},
-              {"fnlock", Properties.Strings.ToggleFnLock},
-              {"brightness_down", Properties.Strings.BrightnessDown},
-              {"brightness_up", Properties.Strings.BrightnessUp},
-              {"visual", Properties.Strings.VisualMode},
-              {"touchscreen", Properties.Strings.ToggleTouchscreen },
-              {"ghelper", Properties.Strings.OpenGHelper},
-              {"custom", Properties.Strings.Custom}
+              {"mute", GHelper.app.Properties.Strings.VolumeMute},
+              {"screenshot", GHelper.app.Properties.Strings.PrintScreen},
+              {"play", GHelper.app.Properties.Strings.PlayPause},
+              {"aura", GHelper.app.Properties.Strings.ToggleAura},
+              {"performance", GHelper.app.Properties.Strings.PerformanceMode},
+              {"screen", GHelper.app.Properties.Strings.ToggleScreen},
+              {"lock", GHelper.app.Properties.Strings.LockScreen},
+              {"miniled", GHelper.app.Properties.Strings.ToggleMiniled},
+              {"fnlock", GHelper.app.Properties.Strings.ToggleFnLock},
+              {"brightness_down", GHelper.app.Properties.Strings.BrightnessDown},
+              {"brightness_up", GHelper.app.Properties.Strings.BrightnessUp},
+              {"visual", GHelper.app.Properties.Strings.VisualMode},
+              {"touchscreen", GHelper.app.Properties.Strings.ToggleTouchscreen },
+              {"ghelper", GHelper.app.Properties.Strings.OpenGHelper},
+              {"custom", GHelper.app.Properties.Strings.Custom}
             };
 
             if (AppConfig.IsDUO())
             {
-                customActions.Add("screenpad_down", Properties.Strings.ScreenPadDown);
-                customActions.Add("screenpad_up", Properties.Strings.ScreenPadUp);
+                customActions.Add("screenpad_down", GHelper.app.Properties.Strings.ScreenPadDown);
+                customActions.Add("screenpad_up", GHelper.app.Properties.Strings.ScreenPadUp);
             }
 
             if (AppConfig.IsAlly())
@@ -55,24 +55,24 @@ namespace GHelper
             switch (name)
             {
                 case "m1":
-                    customActions[""] = Properties.Strings.VolumeDown;
+                    customActions[""] = GHelper.app.Properties.Strings.VolumeDown;
                     break;
                 case "m2":
-                    customActions[""] = Properties.Strings.VolumeUp;
+                    customActions[""] = GHelper.app.Properties.Strings.VolumeUp;
                     break;
                 case "m3":
-                    customActions[""] = Properties.Strings.MuteMic;
+                    customActions[""] = GHelper.app.Properties.Strings.MuteMic;
                     break;
                 case "m4":
-                    customActions[""] = Properties.Strings.OpenGHelper;
+                    customActions[""] = GHelper.app.Properties.Strings.OpenGHelper;
                     customActions.Remove("ghelper");
                     break;
                 case "fnf4":
-                    customActions[""] = Properties.Strings.ToggleAura;
+                    customActions[""] = GHelper.app.Properties.Strings.ToggleAura;
                     customActions.Remove("aura");
                     break;
                 case "fnc":
-                    customActions[""] = Properties.Strings.ToggleFnLock;
+                    customActions[""] = GHelper.app.Properties.Strings.ToggleFnLock;
                     customActions.Remove("fnlock");
                     break;
                 case "fnv":
@@ -120,47 +120,47 @@ namespace GHelper
         {
             InitializeComponent();
 
-            labelBindings.Text = Properties.Strings.KeyBindings;
-            labelBacklightTitle.Text = Properties.Strings.LaptopBacklight;
-            labelSettings.Text = Properties.Strings.Other;
+            labelBindings.Text = GHelper.app.Properties.Strings.KeyBindings;
+            labelBacklightTitle.Text = GHelper.app.Properties.Strings.LaptopBacklight;
+            labelSettings.Text = GHelper.app.Properties.Strings.Other;
 
-            checkAwake.Text = Properties.Strings.Awake;
-            checkSleep.Text = Properties.Strings.Sleep;
-            checkBoot.Text = Properties.Strings.Boot;
-            checkShutdown.Text = Properties.Strings.Shutdown;
-            checkBootSound.Text = Properties.Strings.BootSound;
-            checkStatusLed.Text = Properties.Strings.LEDStatusIndicators;
+            checkAwake.Text = GHelper.app.Properties.Strings.Awake;
+            checkSleep.Text = GHelper.app.Properties.Strings.Sleep;
+            checkBoot.Text = GHelper.app.Properties.Strings.Boot;
+            checkShutdown.Text = GHelper.app.Properties.Strings.Shutdown;
+            checkBootSound.Text = GHelper.app.Properties.Strings.BootSound;
+            checkStatusLed.Text = GHelper.app.Properties.Strings.LEDStatusIndicators;
 
-            labelSpeed.Text = Properties.Strings.AnimationSpeed;
-            //labelBrightness.Text = Properties.Strings.Brightness;
+            labelSpeed.Text = GHelper.app.Properties.Strings.AnimationSpeed;
+            //labelBrightness.Text = GHelper.app.Properties.Strings.Brightness;
 
-            labelBacklightTimeout.Text = Properties.Strings.BacklightTimeout;
-            //labelBacklightTimeoutPlugged.Text = Properties.Strings.BacklightTimeoutPlugged;
+            labelBacklightTimeout.Text = GHelper.app.Properties.Strings.BacklightTimeout;
+            //labelBacklightTimeoutPlugged.Text = GHelper.app.Properties.Strings.BacklightTimeoutPlugged;
 
-            checkGPUFix.Text = Properties.Strings.EnableGPUOnShutdown;
-            checkNoOverdrive.Text = Properties.Strings.DisableOverdrive;
-            checkTopmost.Text = Properties.Strings.WindowTop;
-            checkUSBC.Text = Properties.Strings.OptimizedUSBC;
-            checkAutoToggleClamshellMode.Text = Properties.Strings.ToggleClamshellMode;
+            checkGPUFix.Text = GHelper.app.Properties.Strings.EnableGPUOnShutdown;
+            checkNoOverdrive.Text = GHelper.app.Properties.Strings.DisableOverdrive;
+            checkTopmost.Text = GHelper.app.Properties.Strings.WindowTop;
+            checkUSBC.Text = GHelper.app.Properties.Strings.OptimizedUSBC;
+            checkAutoToggleClamshellMode.Text = GHelper.app.Properties.Strings.ToggleClamshellMode;
 
-            labelBacklightKeyboard.Text = Properties.Strings.Keyboard;
-            labelBacklightBar.Text = Properties.Strings.Lightbar;
-            labelBacklightLid.Text = Properties.Strings.Lid;
-            labelBacklightLogo.Text = Properties.Strings.Logo;
+            labelBacklightKeyboard.Text = GHelper.app.Properties.Strings.Keyboard;
+            labelBacklightBar.Text = GHelper.app.Properties.Strings.Lightbar;
+            labelBacklightLid.Text = GHelper.app.Properties.Strings.Lid;
+            labelBacklightLogo.Text = GHelper.app.Properties.Strings.Logo;
 
-            checkGpuApps.Text = Properties.Strings.KillGpuApps;
-            checkBWIcon.Text = Properties.Strings.BWTrayIcon;
-            labelHibernateAfter.Text = Properties.Strings.HibernateAfter;
+            checkGpuApps.Text = GHelper.app.Properties.Strings.KillGpuApps;
+            checkBWIcon.Text = GHelper.app.Properties.Strings.BWTrayIcon;
+            labelHibernateAfter.Text = GHelper.app.Properties.Strings.HibernateAfter;
 
-            labelAPUMem.Text = Properties.Strings.APUMemory;
+            labelAPUMem.Text = GHelper.app.Properties.Strings.APUMemory;
 
-            Text = Properties.Strings.ExtraSettings;
+            Text = GHelper.app.Properties.Strings.ExtraSettings;
 
             // Accessible Labels
 
-            panelServices.AccessibleName = Properties.Strings.AsusServicesRunning;
-            panelBindings.AccessibleName = Properties.Strings.KeyBindings;
-            tableBindings.AccessibleName = Properties.Strings.KeyBindings;
+            panelServices.AccessibleName = GHelper.app.Properties.Strings.AsusServicesRunning;
+            panelBindings.AccessibleName = GHelper.app.Properties.Strings.KeyBindings;
+            tableBindings.AccessibleName = GHelper.app.Properties.Strings.KeyBindings;
 
             comboM1.AccessibleName = "M1 Action";
             comboM2.AccessibleName = "M2 Action";
@@ -171,19 +171,19 @@ namespace GHelper
             comboFNV.AccessibleName = "Fn+V Action";
             comboFNE.AccessibleName = "Fn+Numpad Action";
 
-            numericBacklightPluggedTime.AccessibleName = Properties.Strings.BacklightTimeoutPlugged;
-            numericBacklightTime.AccessibleName = Properties.Strings.BacklightTimeoutBattery;
+            numericBacklightPluggedTime.AccessibleName = GHelper.app.Properties.Strings.BacklightTimeoutPlugged;
+            numericBacklightTime.AccessibleName = GHelper.app.Properties.Strings.BacklightTimeoutBattery;
 
-            comboKeyboardSpeed.AccessibleName = Properties.Strings.LaptopBacklight + " " + Properties.Strings.AnimationSpeed;
-            comboAPU.AccessibleName = Properties.Strings.LaptopBacklight + " " + Properties.Strings.AnimationSpeed;
+            comboKeyboardSpeed.AccessibleName = GHelper.app.Properties.Strings.LaptopBacklight + " " + GHelper.app.Properties.Strings.AnimationSpeed;
+            comboAPU.AccessibleName = GHelper.app.Properties.Strings.LaptopBacklight + " " + GHelper.app.Properties.Strings.AnimationSpeed;
 
-            checkBoot.AccessibleName = Properties.Strings.Boot + " " + Properties.Strings.LaptopBacklight;
-            checkAwake.AccessibleName = Properties.Strings.Awake + " " + Properties.Strings.LaptopBacklight;
-            checkSleep.AccessibleName = Properties.Strings.Sleep + " " + Properties.Strings.LaptopBacklight;
-            checkShutdown.AccessibleName = Properties.Strings.Shutdown + " " + Properties.Strings.LaptopBacklight;
+            checkBoot.AccessibleName = GHelper.app.Properties.Strings.Boot + " " + GHelper.app.Properties.Strings.LaptopBacklight;
+            checkAwake.AccessibleName = GHelper.app.Properties.Strings.Awake + " " + GHelper.app.Properties.Strings.LaptopBacklight;
+            checkSleep.AccessibleName = GHelper.app.Properties.Strings.Sleep + " " + GHelper.app.Properties.Strings.LaptopBacklight;
+            checkShutdown.AccessibleName = GHelper.app.Properties.Strings.Shutdown + " " + GHelper.app.Properties.Strings.LaptopBacklight;
 
-            panelSettings.AccessibleName = Properties.Strings.ExtraSettings;
-            numericHibernateAfter.AccessibleName = Properties.Strings.HibernateAfter;
+            panelSettings.AccessibleName = GHelper.app.Properties.Strings.ExtraSettings;
+            numericHibernateAfter.AccessibleName = GHelper.app.Properties.Strings.HibernateAfter;
 
             if (AppConfig.IsARCNM())
             {
@@ -526,7 +526,7 @@ namespace GHelper
 
         private void ButtonCores_Click(object? sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show(Properties.Strings.AlertAPUMemoryRestart, Properties.Strings.AlertAPUMemoryRestartTitle, MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show(GHelper.app.Properties.Strings.AlertAPUMemoryRestart, GHelper.app.Properties.Strings.AlertAPUMemoryRestartTitle, MessageBoxButtons.YesNo);
 
             if (dialogResult == DialogResult.Yes)
             {
@@ -553,7 +553,7 @@ namespace GHelper
             int mem = comboAPU.SelectedIndex;
             Program.acpi.SetAPUMem(mem);
 
-            DialogResult dialogResult = MessageBox.Show(Properties.Strings.AlertAPUMemoryRestart, Properties.Strings.AlertAPUMemoryRestartTitle, MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show(GHelper.app.Properties.Strings.AlertAPUMemoryRestart, GHelper.app.Properties.Strings.AlertAPUMemoryRestartTitle, MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 Process.Start("shutdown", "/r /t 1");
@@ -626,16 +626,16 @@ namespace GHelper
 
             if (servicesCount > 0)
             {
-                buttonServices.Text = Properties.Strings.Stop;
+                buttonServices.Text = GHelper.app.Properties.Strings.Stop;
                 labelServices.ForeColor = colorTurbo;
             }
             else
             {
-                buttonServices.Text = Properties.Strings.Start;
+                buttonServices.Text = GHelper.app.Properties.Strings.Start;
                 labelServices.ForeColor = colorStandard;
             }
 
-            labelServices.Text = Properties.Strings.AsusServicesRunning + ":  " + servicesCount;
+            labelServices.Text = GHelper.app.Properties.Strings.AsusServicesRunning + ":  " + servicesCount;
             buttonServices.Enabled = true;
 
         }
@@ -646,7 +646,7 @@ namespace GHelper
 
             if (OptimizationService.GetRunningCount() > 0)
             {
-                labelServices.Text = Properties.Strings.StoppingServices + " ...";
+                labelServices.Text = GHelper.app.Properties.Strings.StoppingServices + " ...";
                 Task.Run(() =>
                 {
                     OptimizationService.StopAsusServices();
@@ -659,7 +659,7 @@ namespace GHelper
             }
             else
             {
-                labelServices.Text = Properties.Strings.StartingServices + " ...";
+                labelServices.Text = GHelper.app.Properties.Strings.StartingServices + " ...";
                 Task.Run(() =>
                 {
                     OptimizationService.StartAsusServices();

@@ -65,9 +65,9 @@
             panelScaling.SuspendLayout();
             panelZoom.SuspendLayout();
             SuspendLayout();
-            // 
+            //
             // pictureMatrix
-            // 
+            //
             pictureMatrix.BackColor = Color.Black;
             pictureMatrix.Cursor = Cursors.SizeAll;
             pictureMatrix.Location = new Point(731, 27);
@@ -75,9 +75,9 @@
             pictureMatrix.Size = new Size(81, 73);
             pictureMatrix.TabIndex = 0;
             pictureMatrix.TabStop = false;
-            // 
+            //
             // trackZoom
-            // 
+            //
             trackZoom.LargeChange = 50;
             trackZoom.Location = new Point(16, 52);
             trackZoom.Maximum = 200;
@@ -89,16 +89,16 @@
             trackZoom.TickFrequency = 20;
             trackZoom.TickStyle = TickStyle.TopLeft;
             trackZoom.Value = 100;
-            // 
+            //
             // buttonPicture
-            // 
+            //
             buttonPicture.Activated = false;
             buttonPicture.BackColor = SystemColors.ControlLight;
             buttonPicture.BorderColor = Color.Transparent;
             buttonPicture.BorderRadius = 5;
             buttonPicture.FlatAppearance.BorderSize = 0;
             buttonPicture.FlatStyle = FlatStyle.Flat;
-            buttonPicture.Image = Properties.Resources.icons8_matrix_32;
+            buttonPicture.Image = GHelper.app.Properties.Resources.icons8_matrix_32;
             buttonPicture.Location = new Point(16, 19);
             buttonPicture.Name = "buttonPicture";
             buttonPicture.Secondary = true;
@@ -108,9 +108,9 @@
             buttonPicture.TextAlign = ContentAlignment.MiddleRight;
             buttonPicture.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonPicture.UseVisualStyleBackColor = false;
-            // 
+            //
             // panelPicture
-            // 
+            //
             panelPicture.BackColor = Color.Black;
             panelPicture.Controls.Add(pictureMatrix);
             panelPicture.Dock = DockStyle.Top;
@@ -118,9 +118,9 @@
             panelPicture.Name = "panelPicture";
             panelPicture.Size = new Size(834, 419);
             panelPicture.TabIndex = 4;
-            // 
+            //
             // panelMain
-            // 
+            //
             panelMain.AutoSize = true;
             panelMain.Controls.Add(panelButtons);
             panelMain.Controls.Add(panelGamma);
@@ -134,9 +134,9 @@
             panelMain.Name = "panelMain";
             panelMain.Size = new Size(834, 1104);
             panelMain.TabIndex = 5;
-            // 
+            //
             // panelButtons
-            // 
+            //
             panelButtons.Controls.Add(buttonReset);
             panelButtons.Controls.Add(buttonPicture);
             panelButtons.Dock = DockStyle.Top;
@@ -144,16 +144,16 @@
             panelButtons.Name = "panelButtons";
             panelButtons.Size = new Size(834, 94);
             panelButtons.TabIndex = 6;
-            // 
+            //
             // buttonReset
-            // 
+            //
             buttonReset.Activated = false;
             buttonReset.BackColor = SystemColors.ControlLight;
             buttonReset.BorderColor = Color.Transparent;
             buttonReset.BorderRadius = 5;
             buttonReset.FlatAppearance.BorderSize = 0;
             buttonReset.FlatStyle = FlatStyle.Flat;
-            buttonReset.Image = Properties.Resources.icons8_refresh_32;
+            buttonReset.Image = GHelper.app.Properties.Resources.icons8_refresh_32;
             buttonReset.Location = new Point(290, 19);
             buttonReset.Name = "buttonReset";
             buttonReset.Secondary = true;
@@ -163,9 +163,9 @@
             buttonReset.TextAlign = ContentAlignment.MiddleRight;
             buttonReset.TextImageRelation = TextImageRelation.ImageBeforeText;
             buttonReset.UseVisualStyleBackColor = false;
-            // 
+            //
             // panelGamma
-            // 
+            //
             panelGamma.AutoSize = true;
             panelGamma.Controls.Add(labelGamma);
             panelGamma.Controls.Add(labelGammaTitle);
@@ -175,9 +175,9 @@
             panelGamma.Name = "panelGamma";
             panelGamma.Size = new Size(834, 145);
             panelGamma.TabIndex = 7;
-            // 
+            //
             // labelGamma
-            // 
+            //
             labelGamma.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelGamma.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             labelGamma.Location = new Point(673, 17);
@@ -186,9 +186,9 @@
             labelGamma.TabIndex = 4;
             labelGamma.Text = "Brightness";
             labelGamma.TextAlign = ContentAlignment.TopRight;
-            // 
+            //
             // labelGammaTitle
-            // 
+            //
             labelGammaTitle.AutoSize = true;
             labelGammaTitle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelGammaTitle.Location = new Point(16, 17);
@@ -196,9 +196,9 @@
             labelGammaTitle.Size = new Size(134, 32);
             labelGammaTitle.TabIndex = 3;
             labelGammaTitle.Text = "Brightness";
-            // 
+            //
             // trackGamma
-            // 
+            //
             trackGamma.LargeChange = 50;
             trackGamma.Location = new Point(16, 52);
             trackGamma.Maximum = 100;
@@ -209,9 +209,9 @@
             trackGamma.TabIndex = 2;
             trackGamma.TickFrequency = 20;
             trackGamma.TickStyle = TickStyle.TopLeft;
-            // 
+            //
             // panelContrast
-            // 
+            //
             panelContrast.AutoSize = true;
             panelContrast.Controls.Add(labelContrast);
             panelContrast.Controls.Add(labelContrastTitle);
@@ -221,9 +221,9 @@
             panelContrast.Name = "panelContrast";
             panelContrast.Size = new Size(834, 145);
             panelContrast.TabIndex = 6;
-            // 
+            //
             // labelContrast
-            // 
+            //
             labelContrast.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelContrast.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             labelContrast.Location = new Point(701, 17);
@@ -232,9 +232,9 @@
             labelContrast.TabIndex = 4;
             labelContrast.Text = "Contrast";
             labelContrast.TextAlign = ContentAlignment.TopRight;
-            // 
+            //
             // labelContrastTitle
-            // 
+            //
             labelContrastTitle.AutoSize = true;
             labelContrastTitle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelContrastTitle.Location = new Point(16, 17);
@@ -242,9 +242,9 @@
             labelContrastTitle.Size = new Size(111, 32);
             labelContrastTitle.TabIndex = 3;
             labelContrastTitle.Text = "Contrast";
-            // 
+            //
             // trackContrast
-            // 
+            //
             trackContrast.LargeChange = 50;
             trackContrast.Location = new Point(16, 52);
             trackContrast.Maximum = 200;
@@ -256,9 +256,9 @@
             trackContrast.TickFrequency = 20;
             trackContrast.TickStyle = TickStyle.TopLeft;
             trackContrast.Value = 100;
-            // 
+            //
             // panelRotation
-            // 
+            //
             panelRotation.Controls.Add(comboRotation);
             panelRotation.Controls.Add(labelRotation);
             panelRotation.Dock = DockStyle.Top;
@@ -266,9 +266,9 @@
             panelRotation.Name = "panelRotation";
             panelRotation.Size = new Size(834, 78);
             panelRotation.TabIndex = 8;
-            // 
+            //
             // comboRotation
-            // 
+            //
             comboRotation.BorderColor = Color.White;
             comboRotation.ButtonColor = Color.FromArgb(255, 255, 255);
             comboRotation.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -280,9 +280,9 @@
             comboRotation.Name = "comboRotation";
             comboRotation.Size = new Size(322, 40);
             comboRotation.TabIndex = 17;
-            // 
+            //
             // labelRotation
-            // 
+            //
             labelRotation.AutoSize = true;
             labelRotation.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelRotation.Location = new Point(16, 20);
@@ -290,9 +290,9 @@
             labelRotation.Size = new Size(190, 32);
             labelRotation.TabIndex = 4;
             labelRotation.Text = "Image Rotation";
-            // 
+            //
             // panelScaling
-            // 
+            //
             panelScaling.Controls.Add(comboScaling);
             panelScaling.Controls.Add(labelScaling);
             panelScaling.Dock = DockStyle.Top;
@@ -300,9 +300,9 @@
             panelScaling.Name = "panelScaling";
             panelScaling.Size = new Size(834, 78);
             panelScaling.TabIndex = 7;
-            // 
+            //
             // comboScaling
-            // 
+            //
             comboScaling.BorderColor = Color.White;
             comboScaling.ButtonColor = Color.FromArgb(255, 255, 255);
             comboScaling.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -314,9 +314,9 @@
             comboScaling.Name = "comboScaling";
             comboScaling.Size = new Size(322, 40);
             comboScaling.TabIndex = 17;
-            // 
+            //
             // labelScaling
-            // 
+            //
             labelScaling.AutoSize = true;
             labelScaling.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelScaling.Location = new Point(16, 20);
@@ -324,9 +324,9 @@
             labelScaling.Size = new Size(185, 32);
             labelScaling.TabIndex = 4;
             labelScaling.Text = "Scaling Quality";
-            // 
+            //
             // panelZoom
-            // 
+            //
             panelZoom.AutoSize = true;
             panelZoom.Controls.Add(labelZoom);
             panelZoom.Controls.Add(labelZoomTitle);
@@ -336,9 +336,9 @@
             panelZoom.Name = "panelZoom";
             panelZoom.Size = new Size(834, 145);
             panelZoom.TabIndex = 5;
-            // 
+            //
             // labelZoom
-            // 
+            //
             labelZoom.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelZoom.AutoSize = true;
             labelZoom.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -347,9 +347,9 @@
             labelZoom.Size = new Size(77, 32);
             labelZoom.TabIndex = 4;
             labelZoom.Text = "Zoom";
-            // 
+            //
             // labelZoomTitle
-            // 
+            //
             labelZoomTitle.AutoSize = true;
             labelZoomTitle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelZoomTitle.Location = new Point(16, 17);
@@ -357,9 +357,9 @@
             labelZoomTitle.Size = new Size(81, 32);
             labelZoomTitle.TabIndex = 3;
             labelZoomTitle.Text = "Zoom";
-            // 
+            //
             // Matrix
-            // 
+            //
             AutoScaleDimensions = new SizeF(192F, 192F);
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoSize = true;

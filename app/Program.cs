@@ -21,7 +21,7 @@ namespace GHelper
         public static NotifyIcon trayIcon = new NotifyIcon
         {
             Text = "G-Helper",
-            Icon = Properties.Resources.standard,
+            Icon = GHelper.app.Properties.Resources.standard,
             Visible = true
         };
 
@@ -73,7 +73,7 @@ namespace GHelper
 
             if (!acpi.IsConnected() && AppConfig.IsASUS())
             {
-                DialogResult dialogResult = MessageBox.Show(Properties.Strings.ACPIError, Properties.Strings.StartupError, MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show(GHelper.app.Properties.Strings.ACPIError, GHelper.app.Properties.Strings.StartupError, MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Process.Start(new ProcessStartInfo("https://www.asus.com/support/FAQ/1047338/") { UseShellExecute = true });

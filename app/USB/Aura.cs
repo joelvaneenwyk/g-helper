@@ -91,18 +91,18 @@ namespace GHelper.USB
 
         private static Dictionary<AuraMode, string> _modesSingleColor = new Dictionary<AuraMode, string>
         {
-            { AuraMode.AuraStatic, Properties.Strings.AuraStatic },
-            { AuraMode.AuraBreathe, Properties.Strings.AuraBreathe },
-            { AuraMode.AuraStrobe, Properties.Strings.AuraStrobe },
+            { AuraMode.AuraStatic, GHelper.app.Properties.Strings.AuraStatic },
+            { AuraMode.AuraBreathe, GHelper.app.Properties.Strings.AuraBreathe },
+            { AuraMode.AuraStrobe, GHelper.app.Properties.Strings.AuraStrobe },
         };
 
         private static Dictionary<AuraMode, string> _modes = new Dictionary<AuraMode, string>
         {
-            { AuraMode.AuraStatic, Properties.Strings.AuraStatic },
-            { AuraMode.AuraBreathe, Properties.Strings.AuraBreathe },
-            { AuraMode.AuraColorCycle, Properties.Strings.AuraColorCycle },
-            { AuraMode.AuraRainbow, Properties.Strings.AuraRainbow },
-            { AuraMode.AuraStrobe, Properties.Strings.AuraStrobe },
+            { AuraMode.AuraStatic, GHelper.app.Properties.Strings.AuraStatic },
+            { AuraMode.AuraBreathe, GHelper.app.Properties.Strings.AuraBreathe },
+            { AuraMode.AuraColorCycle, GHelper.app.Properties.Strings.AuraColorCycle },
+            { AuraMode.AuraRainbow, GHelper.app.Properties.Strings.AuraRainbow },
+            { AuraMode.AuraStrobe, GHelper.app.Properties.Strings.AuraStrobe },
             { AuraMode.HEATMAP, "Heatmap"},
             { AuraMode.GPUMODE, "GPU Mode" },
             { AuraMode.AMBIENT, "Ambient"},
@@ -110,25 +110,25 @@ namespace GHelper.USB
 
         private static Dictionary<AuraMode, string> _modesAlly = new Dictionary<AuraMode, string>
         {
-            { AuraMode.AuraStatic, Properties.Strings.AuraStatic },
-            { AuraMode.AuraBreathe, Properties.Strings.AuraBreathe },
-            { AuraMode.AuraColorCycle, Properties.Strings.AuraColorCycle },
-            { AuraMode.AuraRainbow, Properties.Strings.AuraRainbow },
-            { AuraMode.AuraStrobe, Properties.Strings.AuraStrobe },
+            { AuraMode.AuraStatic, GHelper.app.Properties.Strings.AuraStatic },
+            { AuraMode.AuraBreathe, GHelper.app.Properties.Strings.AuraBreathe },
+            { AuraMode.AuraColorCycle, GHelper.app.Properties.Strings.AuraColorCycle },
+            { AuraMode.AuraRainbow, GHelper.app.Properties.Strings.AuraRainbow },
+            { AuraMode.AuraStrobe, GHelper.app.Properties.Strings.AuraStrobe },
         };
 
         private static Dictionary<AuraMode, string> _modesStrix = new Dictionary<AuraMode, string>
         {
-            { AuraMode.AuraStatic, Properties.Strings.AuraStatic },
-            { AuraMode.AuraBreathe, Properties.Strings.AuraBreathe },
-            { AuraMode.AuraColorCycle, Properties.Strings.AuraColorCycle },
-            { AuraMode.AuraRainbow, Properties.Strings.AuraRainbow },
+            { AuraMode.AuraStatic, GHelper.app.Properties.Strings.AuraStatic },
+            { AuraMode.AuraBreathe, GHelper.app.Properties.Strings.AuraBreathe },
+            { AuraMode.AuraColorCycle, GHelper.app.Properties.Strings.AuraColorCycle },
+            { AuraMode.AuraRainbow, GHelper.app.Properties.Strings.AuraRainbow },
             { AuraMode.Star, "Star" },
             { AuraMode.Rain, "Rain" },
             { AuraMode.Highlight, "Highlight" },
             { AuraMode.Laser, "Laser" },
             { AuraMode.Ripple, "Ripple" },
-            { AuraMode.AuraStrobe, Properties.Strings.AuraStrobe},
+            { AuraMode.AuraStrobe, GHelper.app.Properties.Strings.AuraStrobe},
             { AuraMode.Comet, "Comet" },
             { AuraMode.Flash, "Flash" },
             { AuraMode.HEATMAP, "Heatmap"},
@@ -154,9 +154,9 @@ namespace GHelper.USB
         {
             return new Dictionary<AuraSpeed, string>
             {
-                { AuraSpeed.Slow, Properties.Strings.AuraSlow },
-                { AuraSpeed.Normal, Properties.Strings.AuraNormal },
-                { AuraSpeed.Fast, Properties.Strings.AuraFast }
+                { AuraSpeed.Slow, GHelper.app.Properties.Strings.AuraSlow },
+                { AuraSpeed.Normal, GHelper.app.Properties.Strings.AuraNormal },
+                { AuraSpeed.Fast, GHelper.app.Properties.Strings.AuraFast }
             };
         }
 
@@ -247,7 +247,7 @@ namespace GHelper.USB
             byte[] msg = new byte[17];
             msg[0] = AsusHid.AURA_ID;
             msg[1] = 0xB3;
-            msg[2] = 0x00; // Zone 
+            msg[2] = 0x00; // Zone
             msg[3] = (byte)mode; // Aura Mode
             msg[4] = color.R; // R
             msg[5] = mono ? (byte)0 : color.G; // G
@@ -489,7 +489,7 @@ namespace GHelper.USB
         static byte[] packet4Zone = new byte[]
         {
 /*01        Z1  Z2  Z3  Z4  NA  NA  KeyZone */
-            0,  1,  2,  3,  0,  0, 
+            0,  1,  2,  3,  0,  0,
 
 /*02        RR  R   RM  LM  L   LL  LighBar */
             7,  7,  6,  5,  4,  4,
@@ -827,7 +827,7 @@ namespace GHelper.USB
                 static extern bool SetStretchBltMode(IntPtr hdc, StretchMode iStretchMode);
 
                 /// <summary>
-                /// Captures a screenshot. 
+                /// Captures a screenshot.
                 /// </summary>
                 public static Bitmap CamptureScreen(Rectangle rec, int out_w, int out_h)
                 {

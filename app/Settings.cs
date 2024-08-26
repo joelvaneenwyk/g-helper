@@ -61,68 +61,68 @@ namespace GHelper
             matrixControl = new AniMatrixControl(this);
             allyControl = new AllyControl(this);
 
-            buttonSilent.Text = Properties.Strings.Silent;
-            buttonBalanced.Text = Properties.Strings.Balanced;
-            buttonTurbo.Text = Properties.Strings.Turbo;
-            buttonFans.Text = Properties.Strings.FansPower;
+            buttonSilent.Text = GHelper.app.Properties.Strings.Silent;
+            buttonBalanced.Text = GHelper.app.Properties.Strings.Balanced;
+            buttonTurbo.Text = GHelper.app.Properties.Strings.Turbo;
+            buttonFans.Text = GHelper.app.Properties.Strings.FansPower;
 
-            buttonEco.Text = Properties.Strings.EcoMode;
-            buttonUltimate.Text = Properties.Strings.UltimateMode;
-            buttonStandard.Text = Properties.Strings.StandardMode;
-            buttonOptimized.Text = Properties.Strings.Optimized;
-            buttonStopGPU.Text = Properties.Strings.StopGPUApps;
+            buttonEco.Text = GHelper.app.Properties.Strings.EcoMode;
+            buttonUltimate.Text = GHelper.app.Properties.Strings.UltimateMode;
+            buttonStandard.Text = GHelper.app.Properties.Strings.StandardMode;
+            buttonOptimized.Text = GHelper.app.Properties.Strings.Optimized;
+            buttonStopGPU.Text = GHelper.app.Properties.Strings.StopGPUApps;
 
-            buttonScreenAuto.Text = Properties.Strings.AutoMode;
-            buttonMiniled.Text = Properties.Strings.Multizone;
+            buttonScreenAuto.Text = GHelper.app.Properties.Strings.AutoMode;
+            buttonMiniled.Text = GHelper.app.Properties.Strings.Multizone;
 
-            buttonKeyboardColor.Text = Properties.Strings.Color;
-            buttonKeyboard.Text = Properties.Strings.Extra;
+            buttonKeyboardColor.Text = GHelper.app.Properties.Strings.Color;
+            buttonKeyboard.Text = GHelper.app.Properties.Strings.Extra;
 
-            labelPerf.Text = Properties.Strings.PerformanceMode;
-            labelGPU.Text = Properties.Strings.GPUMode;
-            labelSreen.Text = Properties.Strings.LaptopScreen;
-            labelKeyboard.Text = Properties.Strings.LaptopKeyboard;
-            labelMatrix.Text = Properties.Strings.AnimeMatrix;
-            labelBatteryTitle.Text = Properties.Strings.BatteryChargeLimit;
-            labelPeripherals.Text = Properties.Strings.Peripherals;
+            labelPerf.Text = GHelper.app.Properties.Strings.PerformanceMode;
+            labelGPU.Text = GHelper.app.Properties.Strings.GPUMode;
+            labelSreen.Text = GHelper.app.Properties.Strings.LaptopScreen;
+            labelKeyboard.Text = GHelper.app.Properties.Strings.LaptopKeyboard;
+            labelMatrix.Text = GHelper.app.Properties.Strings.AnimeMatrix;
+            labelBatteryTitle.Text = GHelper.app.Properties.Strings.BatteryChargeLimit;
+            labelPeripherals.Text = GHelper.app.Properties.Strings.Peripherals;
 
-            checkMatrix.Text = Properties.Strings.TurnOffOnBattery;
-            checkMatrixLid.Text = Properties.Strings.DisableOnLidClose;
-            checkStartup.Text = Properties.Strings.RunOnStartup;
+            checkMatrix.Text = GHelper.app.Properties.Strings.TurnOffOnBattery;
+            checkMatrixLid.Text = GHelper.app.Properties.Strings.DisableOnLidClose;
+            checkStartup.Text = GHelper.app.Properties.Strings.RunOnStartup;
 
-            buttonMatrix.Text = Properties.Strings.PictureGif;
-            buttonQuit.Text = Properties.Strings.Quit;
-            buttonUpdates.Text = Properties.Strings.Updates;
+            buttonMatrix.Text = GHelper.app.Properties.Strings.PictureGif;
+            buttonQuit.Text = GHelper.app.Properties.Strings.Quit;
+            buttonUpdates.Text = GHelper.app.Properties.Strings.Updates;
 
-            buttonController.Text = Properties.Strings.Controller;
-            labelAlly.Text = Properties.Strings.AllyController;
+            buttonController.Text = GHelper.app.Properties.Strings.Controller;
+            labelAlly.Text = GHelper.app.Properties.Strings.AllyController;
 
             // Accessible Labels
 
-            panelMatrix.AccessibleName = Properties.Strings.AnimeMatrix;
-            sliderBattery.AccessibleName = Properties.Strings.BatteryChargeLimit;
-            buttonQuit.AccessibleName = Properties.Strings.Quit;
-            buttonUpdates.AccessibleName = Properties.Strings.BiosAndDriverUpdates;
-            panelPerformance.AccessibleName = Properties.Strings.PerformanceMode;
-            buttonSilent.AccessibleName = Properties.Strings.Silent;
-            buttonBalanced.AccessibleName = Properties.Strings.Balanced;
-            buttonTurbo.AccessibleName = Properties.Strings.Turbo;
-            buttonFans.AccessibleName = Properties.Strings.FansAndPower;
-            panelGPU.AccessibleName = Properties.Strings.GPUMode;
-            buttonEco.AccessibleName = Properties.Strings.EcoMode;
-            buttonStandard.AccessibleName = Properties.Strings.StandardMode;
-            buttonOptimized.AccessibleName = Properties.Strings.Optimized;
-            buttonUltimate.AccessibleName = Properties.Strings.UltimateMode;
-            panelScreen.AccessibleName = Properties.Strings.LaptopScreen;
+            panelMatrix.AccessibleName = GHelper.app.Properties.Strings.AnimeMatrix;
+            sliderBattery.AccessibleName = GHelper.app.Properties.Strings.BatteryChargeLimit;
+            buttonQuit.AccessibleName = GHelper.app.Properties.Strings.Quit;
+            buttonUpdates.AccessibleName = GHelper.app.Properties.Strings.BiosAndDriverUpdates;
+            panelPerformance.AccessibleName = GHelper.app.Properties.Strings.PerformanceMode;
+            buttonSilent.AccessibleName = GHelper.app.Properties.Strings.Silent;
+            buttonBalanced.AccessibleName = GHelper.app.Properties.Strings.Balanced;
+            buttonTurbo.AccessibleName = GHelper.app.Properties.Strings.Turbo;
+            buttonFans.AccessibleName = GHelper.app.Properties.Strings.FansAndPower;
+            panelGPU.AccessibleName = GHelper.app.Properties.Strings.GPUMode;
+            buttonEco.AccessibleName = GHelper.app.Properties.Strings.EcoMode;
+            buttonStandard.AccessibleName = GHelper.app.Properties.Strings.StandardMode;
+            buttonOptimized.AccessibleName = GHelper.app.Properties.Strings.Optimized;
+            buttonUltimate.AccessibleName = GHelper.app.Properties.Strings.UltimateMode;
+            panelScreen.AccessibleName = GHelper.app.Properties.Strings.LaptopScreen;
 
-            buttonScreenAuto.AccessibleName = Properties.Strings.AutoMode;
+            buttonScreenAuto.AccessibleName = GHelper.app.Properties.Strings.AutoMode;
             //button60Hz.AccessibleName = "60Hz Refresh Rate";
             //button120Hz.AccessibleName = "Maximum Refresh Rate";
 
-            panelKeyboard.AccessibleName = Properties.Strings.LaptopKeyboard;
-            buttonKeyboard.AccessibleName = Properties.Strings.ExtraSettings;
-            buttonKeyboardColor.AccessibleName = Properties.Strings.LaptopKeyboard + " " + Properties.Strings.Color;
-            comboKeyboard.AccessibleName = Properties.Strings.LaptopBacklight;
+            panelKeyboard.AccessibleName = GHelper.app.Properties.Strings.LaptopKeyboard;
+            buttonKeyboard.AccessibleName = GHelper.app.Properties.Strings.ExtraSettings;
+            buttonKeyboardColor.AccessibleName = GHelper.app.Properties.Strings.LaptopKeyboard + " " + GHelper.app.Properties.Strings.Color;
+            comboKeyboard.AccessibleName = GHelper.app.Properties.Strings.LaptopBacklight;
 
             FormClosing += SettingsForm_FormClosing;
             Deactivate += SettingsForm_LostFocus;
@@ -332,7 +332,7 @@ namespace GHelper
             {
                 panelGamma.Visible = true;
                 sliderGamma.Visible = true;
-                labelGammaTitle.Text = Properties.Strings.FlickerFreeDimming + " / " + Properties.Strings.VisualMode;
+                labelGammaTitle.Text = GHelper.app.Properties.Strings.FlickerFreeDimming + " / " + GHelper.app.Properties.Strings.VisualMode;
 
                 VisualiseBrightness();
 
@@ -342,7 +342,7 @@ namespace GHelper
             }
             else
             {
-                labelGammaTitle.Text = Properties.Strings.VisualMode;
+                labelGammaTitle.Text = GHelper.app.Properties.Strings.VisualMode;
             }
 
             var gamuts = VisualControl.GetGamutModes();
@@ -360,7 +360,7 @@ namespace GHelper
                 {
                     tableVisual.ColumnCount = 2;
 
-                    buttonInstallColor.Text = Properties.Strings.DownloadColorProfiles;
+                    buttonInstallColor.Text = GHelper.app.Properties.Strings.DownloadColorProfiles;
                     buttonInstallColor.Visible = true;
                     buttonInstallColor.Click += ButtonInstallColorProfile_Click;
 
@@ -568,7 +568,7 @@ namespace GHelper
         private void ButtonBatteryFull_MouseEnter(object? sender, EventArgs e)
         {
             batteryFullMouseOver = true;
-            labelCharge.Text = Properties.Strings.BatteryLimitFull;
+            labelCharge.Text = GHelper.app.Properties.Strings.BatteryLimitFull;
         }
 
         private void SettingsForm_Resize(object? sender, EventArgs e)
@@ -600,7 +600,7 @@ namespace GHelper
 
             if (HardwareControl.batteryHealth != -1)
             {
-                labelCharge.Text = Properties.Strings.BatteryHealth + ": " + Math.Round(HardwareControl.batteryHealth, 1) + "%";
+                labelCharge.Text = GHelper.app.Properties.Strings.BatteryHealth + ": " + Math.Round(HardwareControl.batteryHealth, 1) + "%";
             }
         }
 
@@ -709,24 +709,24 @@ namespace GHelper
             contextMenuStrip.Items.Clear();
             Padding padding = new Padding(15, 5, 5, 5);
 
-            var title = new ToolStripMenuItem(Properties.Strings.PerformanceMode);
+            var title = new ToolStripMenuItem(GHelper.app.Properties.Strings.PerformanceMode);
             title.Margin = padding;
             title.Enabled = false;
             contextMenuStrip.Items.Add(title);
 
-            menuSilent = new ToolStripMenuItem(Properties.Strings.Silent);
+            menuSilent = new ToolStripMenuItem(GHelper.app.Properties.Strings.Silent);
             menuSilent.Click += ButtonSilent_Click;
             menuSilent.Margin = padding;
             menuSilent.Checked = (mode == AsusACPI.PerformanceSilent);
             contextMenuStrip.Items.Add(menuSilent);
 
-            menuBalanced = new ToolStripMenuItem(Properties.Strings.Balanced);
+            menuBalanced = new ToolStripMenuItem(GHelper.app.Properties.Strings.Balanced);
             menuBalanced.Click += ButtonBalanced_Click;
             menuBalanced.Margin = padding;
             menuBalanced.Checked = (mode == AsusACPI.PerformanceBalanced);
             contextMenuStrip.Items.Add(menuBalanced);
 
-            menuTurbo = new ToolStripMenuItem(Properties.Strings.Turbo);
+            menuTurbo = new ToolStripMenuItem(GHelper.app.Properties.Strings.Turbo);
             menuTurbo.Click += ButtonTurbo_Click;
             menuTurbo.Margin = padding;
             menuTurbo.Checked = (mode == AsusACPI.PerformanceTurbo);
@@ -736,27 +736,27 @@ namespace GHelper
 
             if (isGpuSection)
             {
-                var titleGPU = new ToolStripMenuItem(Properties.Strings.GPUMode);
+                var titleGPU = new ToolStripMenuItem(GHelper.app.Properties.Strings.GPUMode);
                 titleGPU.Margin = padding;
                 titleGPU.Enabled = false;
                 contextMenuStrip.Items.Add(titleGPU);
 
-                menuEco = new ToolStripMenuItem(Properties.Strings.EcoMode);
+                menuEco = new ToolStripMenuItem(GHelper.app.Properties.Strings.EcoMode);
                 menuEco.Click += ButtonEco_Click;
                 menuEco.Margin = padding;
                 contextMenuStrip.Items.Add(menuEco);
 
-                menuStandard = new ToolStripMenuItem(Properties.Strings.StandardMode);
+                menuStandard = new ToolStripMenuItem(GHelper.app.Properties.Strings.StandardMode);
                 menuStandard.Click += ButtonStandard_Click;
                 menuStandard.Margin = padding;
                 contextMenuStrip.Items.Add(menuStandard);
 
-                menuUltimate = new ToolStripMenuItem(Properties.Strings.UltimateMode);
+                menuUltimate = new ToolStripMenuItem(GHelper.app.Properties.Strings.UltimateMode);
                 menuUltimate.Click += ButtonUltimate_Click;
                 menuUltimate.Margin = padding;
                 contextMenuStrip.Items.Add(menuUltimate);
 
-                menuOptimized = new ToolStripMenuItem(Properties.Strings.Optimized);
+                menuOptimized = new ToolStripMenuItem(GHelper.app.Properties.Strings.Optimized);
                 menuOptimized.Click += ButtonOptimized_Click;
                 menuOptimized.Margin = padding;
                 contextMenuStrip.Items.Add(menuOptimized);
@@ -765,7 +765,7 @@ namespace GHelper
             }
 
 
-            var quit = new ToolStripMenuItem(Properties.Strings.Quit);
+            var quit = new ToolStripMenuItem(GHelper.app.Properties.Strings.Quit);
             quit.Click += ButtonQuit_Click;
             quit.Margin = padding;
             contextMenuStrip.Items.Add(quit);
@@ -829,12 +829,12 @@ namespace GHelper
 
         private void Button120Hz_MouseHover(object? sender, EventArgs e)
         {
-            labelTipScreen.Text = Properties.Strings.MaxRefreshTooltip;
+            labelTipScreen.Text = GHelper.app.Properties.Strings.MaxRefreshTooltip;
         }
 
         private void Button60Hz_MouseHover(object? sender, EventArgs e)
         {
-            labelTipScreen.Text = Properties.Strings.MinRefreshTooltip;
+            labelTipScreen.Text = GHelper.app.Properties.Strings.MinRefreshTooltip;
         }
 
         private void ButtonScreen_MouseLeave(object? sender, EventArgs e)
@@ -844,27 +844,27 @@ namespace GHelper
 
         private void ButtonScreenAuto_MouseHover(object? sender, EventArgs e)
         {
-            labelTipScreen.Text = Properties.Strings.AutoRefreshTooltip;
+            labelTipScreen.Text = GHelper.app.Properties.Strings.AutoRefreshTooltip;
         }
 
         private void ButtonUltimate_MouseHover(object? sender, EventArgs e)
         {
-            labelTipGPU.Text = Properties.Strings.UltimateGPUTooltip;
+            labelTipGPU.Text = GHelper.app.Properties.Strings.UltimateGPUTooltip;
         }
 
         private void ButtonStandard_MouseHover(object? sender, EventArgs e)
         {
-            labelTipGPU.Text = Properties.Strings.StandardGPUTooltip;
+            labelTipGPU.Text = GHelper.app.Properties.Strings.StandardGPUTooltip;
         }
 
         private void ButtonEco_MouseHover(object? sender, EventArgs e)
         {
-            labelTipGPU.Text = Properties.Strings.EcoGPUTooltip;
+            labelTipGPU.Text = GHelper.app.Properties.Strings.EcoGPUTooltip;
         }
 
         private void ButtonOptimized_MouseHover(object? sender, EventArgs e)
         {
-            labelTipGPU.Text = Properties.Strings.OptimizedGPUTooltip;
+            labelTipGPU.Text = GHelper.app.Properties.Strings.OptimizedGPUTooltip;
         }
 
         private void ButtonGPU_MouseLeave(object? sender, EventArgs e)
@@ -1219,8 +1219,8 @@ namespace GHelper
             ButtonEnabled(buttonMiniled, screenEnabled);
 
             labelSreen.Text = screenEnabled
-                ? Properties.Strings.LaptopScreen + ": " + frequency + "Hz" + ((overdrive == 1) ? " + " + Properties.Strings.Overdrive : "")
-                : Properties.Strings.LaptopScreen + ": " + Properties.Strings.TurnedOff;
+                ? GHelper.app.Properties.Strings.LaptopScreen + ": " + frequency + "Hz" + ((overdrive == 1) ? " + " + GHelper.app.Properties.Strings.Overdrive : "")
+                : GHelper.app.Properties.Strings.LaptopScreen + ": " + GHelper.app.Properties.Strings.TurnedOff;
 
             button60Hz.Activated = false;
             button120Hz.Activated = false;
@@ -1269,19 +1269,19 @@ namespace GHelper
                 {
                     // Multizone On
                     case 0:
-                        buttonMiniled.Text = Properties.Strings.Multizone;
+                        buttonMiniled.Text = GHelper.app.Properties.Strings.Multizone;
                         buttonMiniled.BorderColor = colorStandard;
                         buttonMiniled.Activated = true;
                         break;
                     // Multizone Strong
                     case 1:
-                        buttonMiniled.Text = Properties.Strings.MultizoneStrong;
+                        buttonMiniled.Text = GHelper.app.Properties.Strings.MultizoneStrong;
                         buttonMiniled.BorderColor = colorTurbo;
                         buttonMiniled.Activated = true;
                         break;
                     // Multizone Off
                     case 2:
-                        buttonMiniled.Text = Properties.Strings.OneZone;
+                        buttonMiniled.Text = GHelper.app.Properties.Strings.OneZone;
                         buttonMiniled.BorderColor = colorStandard;
                         buttonMiniled.Activated = false;
                         break;
@@ -1292,8 +1292,8 @@ namespace GHelper
                 buttonMiniled.Visible = false;
             }
 
-            if (hdr) labelVisual.Text = Properties.Strings.VisualModesHDR;
-            if (!screenEnabled) labelVisual.Text = Properties.Strings.VisualModesScreen;
+            if (hdr) labelVisual.Text = GHelper.app.Properties.Strings.VisualModesHDR;
+            if (!screenEnabled) labelVisual.Text = GHelper.app.Properties.Strings.VisualModesScreen;
 
             if (!screenEnabled || hdr)
             {
@@ -1411,12 +1411,12 @@ namespace GHelper
                 cpuTemp = ": " + Math.Round((decimal)HardwareControl.cpuTemp).ToString() + "°C";
 
             if (HardwareControl.batteryCapacity > 0)
-                charge = Properties.Strings.BatteryCharge + ": " + Math.Round(HardwareControl.batteryCapacity, 1) + "% ";
+                charge = GHelper.app.Properties.Strings.BatteryCharge + ": " + Math.Round(HardwareControl.batteryCapacity, 1) + "% ";
 
             if (HardwareControl.batteryRate < 0)
-                battery = Properties.Strings.Discharging + ": " + Math.Round(-(decimal)HardwareControl.batteryRate, 1).ToString() + "W";
+                battery = GHelper.app.Properties.Strings.Discharging + ": " + Math.Round(-(decimal)HardwareControl.batteryRate, 1).ToString() + "W";
             else if (HardwareControl.batteryRate > 0)
-                battery = Properties.Strings.Charging + ": " + Math.Round((decimal)HardwareControl.batteryRate, 1).ToString() + "W";
+                battery = GHelper.app.Properties.Strings.Charging + ": " + Math.Round((decimal)HardwareControl.batteryRate, 1).ToString() + "W";
 
 
             if (HardwareControl.gpuTemp > 0)
@@ -1620,7 +1620,7 @@ namespace GHelper
         {
             Invoke(delegate
             {
-                if (text is null) text = Properties.Strings.GPUMode + ": " + Properties.Strings.GPUChanging + " ...";
+                if (text is null) text = GHelper.app.Properties.Strings.GPUMode + ": " + GHelper.app.Properties.Strings.GPUChanging + " ...";
 
                 ButtonEnabled(buttonOptimized, false);
                 ButtonEnabled(buttonEco, false);
@@ -1668,20 +1668,20 @@ namespace GHelper
                     buttonOptimized.BorderColor = colorEco;
                     buttonEco.Activated = !GPUAuto;
                     buttonOptimized.Activated = GPUAuto;
-                    labelGPU.Text = Properties.Strings.GPUMode + ": " + Properties.Strings.GPUModeEco;
-                    panelGPU.AccessibleName = Properties.Strings.GPUMode + " - " + (GPUAuto ? Properties.Strings.Optimized : Properties.Strings.EcoMode);
+                    labelGPU.Text = GHelper.app.Properties.Strings.GPUMode + ": " + GHelper.app.Properties.Strings.GPUModeEco;
+                    panelGPU.AccessibleName = GHelper.app.Properties.Strings.GPUMode + " - " + (GPUAuto ? GHelper.app.Properties.Strings.Optimized : GHelper.app.Properties.Strings.EcoMode);
                     break;
                 case AsusACPI.GPUModeUltimate:
                     buttonUltimate.Activated = true;
-                    labelGPU.Text = Properties.Strings.GPUMode + ": " + Properties.Strings.GPUModeUltimate;
-                    panelGPU.AccessibleName = Properties.Strings.GPUMode + " - " + Properties.Strings.UltimateMode;
+                    labelGPU.Text = GHelper.app.Properties.Strings.GPUMode + ": " + GHelper.app.Properties.Strings.GPUModeUltimate;
+                    panelGPU.AccessibleName = GHelper.app.Properties.Strings.GPUMode + " - " + GHelper.app.Properties.Strings.UltimateMode;
                     break;
                 default:
                     buttonOptimized.BorderColor = colorStandard;
                     buttonStandard.Activated = !GPUAuto;
                     buttonOptimized.Activated = GPUAuto;
-                    labelGPU.Text = Properties.Strings.GPUMode + ": " + Properties.Strings.GPUModeStandard;
-                    panelGPU.AccessibleName = Properties.Strings.GPUMode + " - " + (GPUAuto ? Properties.Strings.Optimized : Properties.Strings.StandardMode);
+                    labelGPU.Text = GHelper.app.Properties.Strings.GPUMode + ": " + GHelper.app.Properties.Strings.GPUModeStandard;
+                    panelGPU.AccessibleName = GHelper.app.Properties.Strings.GPUMode + " - " + (GPUAuto ? GHelper.app.Properties.Strings.Optimized : GHelper.app.Properties.Strings.StandardMode);
                     break;
             }
 
@@ -1715,13 +1715,13 @@ namespace GHelper
             switch (GPUMode)
             {
                 case AsusACPI.GPUModeEco:
-                    Program.trayIcon.Icon = AppConfig.IsBWIcon() ? (!isDark ? Properties.Resources.dark_eco : Properties.Resources.light_eco) : Properties.Resources.eco;
+                    Program.trayIcon.Icon = AppConfig.IsBWIcon() ? (!isDark ? GHelper.app.Properties.Resources.dark_eco : GHelper.app.Properties.Resources.light_eco) : GHelper.app.Properties.Resources.eco;
                     break;
                 case AsusACPI.GPUModeUltimate:
-                    Program.trayIcon.Icon = AppConfig.IsBWIcon() ? (!isDark ? Properties.Resources.dark_standard : Properties.Resources.light_standard) : Properties.Resources.ultimate;
+                    Program.trayIcon.Icon = AppConfig.IsBWIcon() ? (!isDark ? GHelper.app.Properties.Resources.dark_standard : GHelper.app.Properties.Resources.light_standard) : GHelper.app.Properties.Resources.ultimate;
                     break;
                 default:
-                    Program.trayIcon.Icon = AppConfig.IsBWIcon() ? (!isDark ? Properties.Resources.dark_standard : Properties.Resources.light_standard) : Properties.Resources.standard;
+                    Program.trayIcon.Icon = AppConfig.IsBWIcon() ? (!isDark ? GHelper.app.Properties.Resources.dark_standard : GHelper.app.Properties.Resources.light_standard) : GHelper.app.Properties.Resources.standard;
                     break;
             }
         }
@@ -1750,7 +1750,7 @@ namespace GHelper
 
         public void VisualiseBatteryTitle(int limit)
         {
-            labelBatteryTitle.Text = Properties.Strings.BatteryChargeLimit + ": " + limit.ToString() + "%";
+            labelBatteryTitle.Text = GHelper.app.Properties.Strings.BatteryChargeLimit + ": " + limit.ToString() + "%";
         }
 
         public void VisualiseBattery(int limit)
@@ -1758,7 +1758,7 @@ namespace GHelper
             VisualiseBatteryTitle(limit);
             sliderBattery.Value = limit;
 
-            sliderBattery.AccessibleName = Properties.Strings.BatteryChargeLimit + ": " + limit.ToString() + "%";
+            sliderBattery.AccessibleName = GHelper.app.Properties.Strings.BatteryChargeLimit + ": " + limit.ToString() + "%";
             //sliderBattery.AccessibilityObject.Select(AccessibleSelection.TakeFocus);
 
             VisualiseBatteryFull();
@@ -1770,13 +1770,13 @@ namespace GHelper
             {
                 buttonBatteryFull.BackColor = colorStandard;
                 buttonBatteryFull.ForeColor = SystemColors.ControlLightLight;
-                buttonBatteryFull.AccessibleName = Properties.Strings.BatteryChargeLimit + "100% on";
+                buttonBatteryFull.AccessibleName = GHelper.app.Properties.Strings.BatteryChargeLimit + "100% on";
             }
             else
             {
                 buttonBatteryFull.BackColor = buttonSecond;
                 buttonBatteryFull.ForeColor = SystemColors.ControlDark;
-                buttonBatteryFull.AccessibleName = Properties.Strings.BatteryChargeLimit + "100% off";
+                buttonBatteryFull.AccessibleName = GHelper.app.Properties.Strings.BatteryChargeLimit + "100% off";
             }
 
         }
@@ -1805,7 +1805,7 @@ namespace GHelper
                     if (m.HasBattery())
                     {
                         b.Text = m.GetDisplayName() + "\n" + m.Battery + "%"
-                                            + (m.Charging ? "(" + Properties.Strings.Charging + ")" : "");
+                                            + (m.Charging ? "(" + GHelper.app.Properties.Strings.Charging + ")" : "");
                     }
                     else
                     {
@@ -1816,17 +1816,17 @@ namespace GHelper
                 else
                 {
                     //Mouse is either not connected or in standby
-                    b.Text = m.GetDisplayName() + "\n(" + Properties.Strings.NotConnected + ")";
+                    b.Text = m.GetDisplayName() + "\n(" + GHelper.app.Properties.Strings.NotConnected + ")";
                 }
 
                 switch (m.DeviceType())
                 {
                     case PeripheralType.Mouse:
-                        b.Image = ControlHelper.TintImage(Properties.Resources.icons8_maus_32, b.ForeColor);
+                        b.Image = ControlHelper.TintImage(GHelper.app.Properties.Resources.icons8_maus_32, b.ForeColor);
                         break;
 
                     case PeripheralType.Keyboard:
-                        b.Image = ControlHelper.TintImage(Properties.Resources.icons8_keyboard_32, b.ForeColor);
+                        b.Image = ControlHelper.TintImage(GHelper.app.Properties.Resources.icons8_keyboard_32, b.ForeColor);
                         break;
                 }
 

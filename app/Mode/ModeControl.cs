@@ -251,7 +251,7 @@ namespace GHelper.Mode
 
         public void SetModeLabel()
         {
-            settings.SetModeLabel(Properties.Strings.PerformanceMode + ": " + Modes.GetCurrentName() + (customFans ? "+" : "") + ((customPower > 0) ? " " + customPower + "W" : ""));
+            settings.SetModeLabel(GHelper.app.Properties.Strings.PerformanceMode + ": " + Modes.GetCurrentName() + (customFans ? "+" : "") + ((customPower > 0) ? " " + customPower + "W" : ""));
         }
 
         public void SetRyzenPower(bool init = false)
@@ -307,7 +307,7 @@ namespace GHelper.Mode
             if (limit_slow > AsusACPI.MaxTotal) return;
             if (limit_slow < AsusACPI.MinTotal) return;
 
-            // SPL and SPPT 
+            // SPL and SPPT
             if (Program.acpi.DeviceGet(AsusACPI.PPT_APUA0) >= 0)
             {
                 Program.acpi.DeviceSet(AsusACPI.PPT_APUA3, limit_total, "PowerLimit A3");

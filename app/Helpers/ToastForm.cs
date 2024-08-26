@@ -86,37 +86,37 @@ namespace GHelper.Helpers
             switch (toastIcon)
             {
                 case ToastIcon.BrightnessUp:
-                    icon = Properties.Resources.brightness_up;
+                    icon = GHelper.app.Properties.Resources.brightness_up;
                     break;
                 case ToastIcon.BrightnessDown:
-                    icon = Properties.Resources.brightness_down;
+                    icon = GHelper.app.Properties.Resources.brightness_down;
                     break;
                 case ToastIcon.BacklightUp:
-                    icon = Properties.Resources.backlight_up;
+                    icon = GHelper.app.Properties.Resources.backlight_up;
                     break;
                 case ToastIcon.BacklightDown:
-                    icon = Properties.Resources.backlight_down;
+                    icon = GHelper.app.Properties.Resources.backlight_down;
                     break;
                 case ToastIcon.Microphone:
-                    icon = Properties.Resources.icons8_microphone_96;
+                    icon = GHelper.app.Properties.Resources.icons8_microphone_96;
                     break;
                 case ToastIcon.MicrophoneMute:
-                    icon = Properties.Resources.icons8_mute_unmute_96;
+                    icon = GHelper.app.Properties.Resources.icons8_mute_unmute_96;
                     break;
                 case ToastIcon.Touchpad:
-                    icon = Properties.Resources.icons8_touchpad_96;
+                    icon = GHelper.app.Properties.Resources.icons8_touchpad_96;
                     break;
                 case ToastIcon.FnLock:
-                    icon = Properties.Resources.icons8_function;
+                    icon = GHelper.app.Properties.Resources.icons8_function;
                     break;
                 case ToastIcon.Battery:
-                    icon = Properties.Resources.icons8_charged_battery_96;
+                    icon = GHelper.app.Properties.Resources.icons8_charged_battery_96;
                     break;
                 case ToastIcon.Charger:
-                    icon = Properties.Resources.icons8_charging_battery_96;
+                    icon = GHelper.app.Properties.Resources.icons8_charging_battery_96;
                     break;
                 case ToastIcon.Controller:
-                    icon = Properties.Resources.icons8_controller_96;
+                    icon = GHelper.app.Properties.Resources.icons8_controller_96;
                     break;
 
             }

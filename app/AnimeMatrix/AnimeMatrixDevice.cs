@@ -188,13 +188,13 @@ namespace GHelper.AnimeMatrix
 
         private void LoadMFont()
         {
-            byte[] fontData = GHelper.Properties.Resources.MFont;
+            byte[] fontData = GHelper.app.Properties.Resources.MFont;
             IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
             System.Runtime.InteropServices.Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
             uint dummy = 0;
 
-            fonts.AddMemoryFont(fontPtr, GHelper.Properties.Resources.MFont.Length);
-            AddFontMemResourceEx(fontPtr, (uint)GHelper.Properties.Resources.MFont.Length, IntPtr.Zero, ref dummy);
+            fonts.AddMemoryFont(fontPtr, GHelper.app.Properties.Resources.MFont.Length);
+            AddFontMemResourceEx(fontPtr, (uint)GHelper.app.Properties.Resources.MFont.Length, IntPtr.Zero, ref dummy);
             System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
         }
 
