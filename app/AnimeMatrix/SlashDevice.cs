@@ -1,4 +1,4 @@
-﻿using GHelper.AnimeMatrix.Communication;
+using GHelper.AnimeMatrix.Communication;
 using System.Management;
 using System.Text;
 
@@ -100,7 +100,7 @@ namespace GHelper.AnimeMatrix
         {
             Set(CreatePacket(Encoding.ASCII.GetBytes("ASUS Tech.Inc.")), "SlashWakeUp");
             Set(CreatePacket([0xC2]), "SlashWakeUp");
-            Set(CreatePacket([0xD1, 0x01, 0x00, 0x01 ]), "SlashWakeUp");
+            Set(CreatePacket([0xD1, 0x01, 0x00, 0x01]), "SlashWakeUp");
         }
 
         public void Init()

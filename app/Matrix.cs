@@ -1,4 +1,4 @@
-﻿using GHelper.AnimeMatrix;
+using GHelper.AnimeMatrix;
 using GHelper.UI;
 
 namespace GHelper

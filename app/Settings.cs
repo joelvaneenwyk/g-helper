@@ -1,4 +1,4 @@
-﻿using GHelper.Ally;
+using GHelper.Ally;
 using GHelper.AnimeMatrix;
 using GHelper.AutoUpdate;
 using GHelper.Battery;

@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 
 namespace GHelper.Helpers
 {
@@ -18,7 +18,7 @@ namespace GHelper.Helpers
 
         public static void OpenSettings()
         {
-            ProcessHelper.RunCMD("explorer","ms-settings:personalization-lighting");
+            ProcessHelper.RunCMD("explorer", "ms-settings:personalization-lighting");
         }
 
 

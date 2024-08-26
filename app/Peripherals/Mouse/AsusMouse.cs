@@ -1,4 +1,4 @@
-﻿using GHelper.AnimeMatrix.Communication;
+using GHelper.AnimeMatrix.Communication;
 using GHelper.AnimeMatrix.Communication.Platform;
 using System.Runtime.CompilerServices;
 using System.Text;

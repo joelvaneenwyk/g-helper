@@ -1,4 +1,4 @@
-﻿using GHelper.Display;
+using GHelper.Display;
 using GHelper.Gpu.NVidia;
 using GHelper.Helpers;
 using GHelper.USB;

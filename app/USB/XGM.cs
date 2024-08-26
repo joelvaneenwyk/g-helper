@@ -1,4 +1,4 @@
-﻿// Reference : thanks to https://github.com/RomanYazvinsky/ for initial discovery of XGM payloads
+// Reference : thanks to https://github.com/RomanYazvinsky/ for initial discovery of XGM payloads
 
 using HidSharp;
 using System.Text;
@@ -9,7 +9,7 @@ namespace GHelper.USB
     {
         const int ASUS_ID = 0x0b05;
 
-        static int[] deviceIds = { 0x1970, 0x1a9a};
+        static int[] deviceIds = { 0x1970, 0x1a9a };
 
         public static void Write(byte[] data)
         {

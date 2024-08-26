@@ -1,4 +1,4 @@
-﻿//
+//
 // This is a optimised/simplified version of Ryzen System Management Unit from https://github.com/JamesCJ60/Universal-x86-Tuning-Utility
 // I do not take credit for the full functionality of the code (c)
 //
@@ -142,7 +142,7 @@ namespace Ryzen
 
         public Status SendPsmu(uint message, ref uint[] arguments)
         {
-            var result =  SendMsg(PSMU_ADDR_MSG, PSMU_ADDR_RSP, PSMU_ADDR_ARG, message, ref arguments);
+            var result = SendMsg(PSMU_ADDR_MSG, PSMU_ADDR_RSP, PSMU_ADDR_ARG, message, ref arguments);
             //Logger.WriteLine($"RyzenPSMU:{message} {arguments[0]} {result}");
             return result;
         }

@@ -1,4 +1,4 @@
-﻿using GHelper.Peripherals.Mouse;
+using GHelper.Peripherals.Mouse;
 using GHelper.Peripherals.Mouse.Models;
 using System.Runtime.CompilerServices;
 

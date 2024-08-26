@@ -1,4 +1,4 @@
-﻿using GHelper.Helpers;
+using GHelper.Helpers;
 using System.Management;
 
 namespace GHelper.Display
@@ -98,7 +98,7 @@ namespace GHelper.Display
                 foreach (FileInfo icm in icms)
                 {
                     //Logger.WriteLine(icm.FullName);
-                    
+
                     if (icm.Name.Contains("sRGB"))
                     {
                         try
@@ -106,7 +106,7 @@ namespace GHelper.Display
                             _modes.Add(isVivo ? SplendidGamut.VivoSRGB : SplendidGamut.sRGB, "Gamut: sRGB");
                             Logger.WriteLine(icm.FullName + " sRGB");
                         }
-                        catch 
+                        catch
                         {
                         }
                     }

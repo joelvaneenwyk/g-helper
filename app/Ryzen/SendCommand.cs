@@ -1,4 +1,4 @@
-﻿//
+//
 // This is a optimised/simplified version of Ryzen System Management Unit from https://github.com/JamesCJ60/Universal-x86-Tuning-Utility
 // I do not take credit for the full functionality of the code (c)
 //
@@ -58,7 +58,7 @@ namespace Ryzen
 
             RyzenAccess.Deinitialize();
             return result;
-            
+
         }
 
         //STAMP2 Limit
@@ -125,7 +125,7 @@ namespace Ryzen
             uint[] Args = new uint[6];
             Args[0] = value;
             Smu.Status? result = null;
-            
+
             switch (FAMID)
             {
                 case 0:

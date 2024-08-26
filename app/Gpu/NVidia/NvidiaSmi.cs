@@ -1,4 +1,4 @@
-﻿using Ryzen;
+using Ryzen;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 

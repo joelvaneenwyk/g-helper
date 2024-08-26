@@ -1,4 +1,4 @@
-﻿using HidSharp;
+using HidSharp;
 using HidSharp.Reports;
 using System.Diagnostics;
 

@@ -1,4 +1,4 @@
-﻿namespace GHelper.Display
+namespace GHelper.Display
 {
 
     public class DisplayGammaRamp
@@ -86,7 +86,7 @@
             for (var i = 0; i < result.Length; i++)
             {
                 if (brightness < 0.5)
-                    result[i] = (ushort)(0.5 * ushort.MaxValue * Math.Pow((float)i/(result.Length - 1),  2 - brightness*2));
+                    result[i] = (ushort)(0.5 * ushort.MaxValue * Math.Pow((float)i / (result.Length - 1), 2 - brightness * 2));
                 else
                     result[i] = (ushort)(data[i] * brightness);
             }

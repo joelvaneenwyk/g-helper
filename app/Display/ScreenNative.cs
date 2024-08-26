@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Runtime.InteropServices;
 using static GHelper.Display.ScreenInterrogatory;
 
@@ -180,7 +180,7 @@ namespace GHelper.Display
 
                         AppConfig.Set("internal_display", device.monitorFriendlyDeviceName);
                         var names = device.monitorDevicePath.Split("#");
-                        
+
                         if (names.Length > 1) return names[1];
                         else return "";
                     }

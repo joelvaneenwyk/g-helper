@@ -1,4 +1,4 @@
-﻿namespace GHelper.Peripherals.Mouse.Models
+namespace GHelper.Peripherals.Mouse.Models
 {
     //P504
     public class GladiusIIOrigin : AsusMouse

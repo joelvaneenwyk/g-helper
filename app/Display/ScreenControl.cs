@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 
 namespace GHelper.Display
 {
@@ -112,7 +112,7 @@ namespace GHelper.Display
             {
                 switch (miniled1)
                 {
-                    case 1: 
+                    case 1:
                         miniled = 0;
                         name = Properties.Strings.OneZone;
                         break;
@@ -126,15 +126,15 @@ namespace GHelper.Display
             {
                 switch (miniled2)
                 {
-                    case 1: 
+                    case 1:
                         miniled = 2;
                         name = Properties.Strings.OneZone;
                         break;
-                    case 2: 
+                    case 2:
                         miniled = 0;
                         name = Properties.Strings.Multizone;
                         break;
-                    default: 
+                    default:
                         miniled = 1;
                         name = Properties.Strings.MultizoneStrong;
                         break;
@@ -143,7 +143,7 @@ namespace GHelper.Display
 
             AppConfig.Set("miniled", miniled);
             SetScreen(miniled: miniled);
-            
+
             return name;
         }
 
@@ -176,7 +176,8 @@ namespace GHelper.Display
             try
             {
                 hdr = ScreenCCD.GetHDRStatus();
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Logger.WriteLine(ex.Message);
             }

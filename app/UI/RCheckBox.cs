@@ -1,4 +1,4 @@
-﻿namespace GHelper.UI
+namespace GHelper.UI
 {
     public class RCheckBox : CheckBox
     {

@@ -32,7 +32,7 @@ namespace GHelper
         public static ModeControl modeControl = new ModeControl();
         public static GPUModeControl gpuControl = new GPUModeControl(settingsForm);
         public static AllyControl allyControl = new AllyControl(settingsForm);
-        public static ScreenControl screenControl = new ScreenControl(); 
+        public static ScreenControl screenControl = new ScreenControl();
         public static ClamshellModeControl clamshellControl = new ClamshellModeControl();
 
         public static ToastForm toast = new ToastForm();
@@ -199,7 +199,7 @@ namespace GHelper
                     if (settingsForm.matrixForm is not null && settingsForm.matrixForm.Text != "")
                         settingsForm.matrixForm.InitTheme();
 
-                    if (settingsForm.handheldForm is not null && settingsForm.handheldForm.Text != "") 
+                    if (settingsForm.handheldForm is not null && settingsForm.handheldForm.Text != "")
                         settingsForm.handheldForm.InitTheme();
 
                     break;
@@ -237,7 +237,8 @@ namespace GHelper
             if (AppConfig.IsAlly())
             {
                 allyControl.Init();
-            } else
+            }
+            else
             {
                 settingsForm.AutoKeyboard();
             }
@@ -282,7 +283,7 @@ namespace GHelper
             }
             else
             {
-                var screen = Screen.PrimaryScreen; 
+                var screen = Screen.PrimaryScreen;
                 if (screen is null) screen = Screen.FromControl(settingsForm);
 
                 settingsForm.Location = screen.WorkingArea.Location;
@@ -293,7 +294,7 @@ namespace GHelper
                 settingsForm.Activate();
 
                 settingsForm.Left = screen.WorkingArea.Width - 10 - settingsForm.Width;
-                
+
                 if (AppConfig.IsAlly())
                     settingsForm.Top = Math.Max(10, screen.Bounds.Height - 110 - settingsForm.Height);
                 else

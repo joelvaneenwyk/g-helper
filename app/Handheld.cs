@@ -1,4 +1,4 @@
-﻿using GHelper.Ally;
+using GHelper.Ally;
 using GHelper.UI;
 
 namespace GHelper

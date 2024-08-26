@@ -1,4 +1,4 @@
-﻿namespace GHelper.Mode
+namespace GHelper.Mode
 {
     internal class Modes
     {

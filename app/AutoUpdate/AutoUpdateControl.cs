@@ -1,4 +1,4 @@
-﻿using GHelper.Helpers;
+using GHelper.Helpers;
 using System.Diagnostics;
 using System.Net;
 using System.Reflection;
@@ -39,7 +39,8 @@ namespace GHelper.AutoUpdate
             try
             {
                 Process.Start(new ProcessStartInfo(versionUrl) { UseShellExecute = true });
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Logger.WriteLine("Failed to open releases page:" + ex.Message);
             }
@@ -126,7 +127,7 @@ namespace GHelper.AutoUpdate
                 Logger.WriteLine(zipName);
                 Logger.WriteLine(exeName);
 
-                string command = $"$ErrorActionPreference = \"Stop\"; Wait-Process -Name \"GHelper\"; Expand-Archive \"{zipName}\" -DestinationPath . -Force; Remove-Item \"{zipName}\" -Force; \".\\{exeName}\"; "; 
+                string command = $"$ErrorActionPreference = \"Stop\"; Wait-Process -Name \"GHelper\"; Expand-Archive \"{zipName}\" -DestinationPath . -Force; Remove-Item \"{zipName}\" -Force; \".\\{exeName}\"; ";
                 Logger.WriteLine(command);
 
                 try

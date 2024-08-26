@@ -1,4 +1,4 @@
-﻿using GHelper.Gpu.AMD;
+using GHelper.Gpu.AMD;
 using GHelper.Helpers;
 using GHelper.Input;
 using GHelper.Mode;

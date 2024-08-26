@@ -1,4 +1,4 @@
-﻿using GHelper.Display;
+using GHelper.Display;
 using GHelper.Mode;
 using Microsoft.Win32;
 
@@ -35,7 +35,8 @@ namespace GHelper.Helpers
                     }
 
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Logger.WriteLine(ex.ToString());
             }
@@ -108,7 +109,7 @@ namespace GHelper.Helpers
             if (Program.settingsForm.Visible)
                 Program.screenControl.InitScreen();
 
-            if (AppConfig.IsForceMiniled()) 
+            if (AppConfig.IsForceMiniled())
                 Program.screenControl.InitMiniled();
 
         }

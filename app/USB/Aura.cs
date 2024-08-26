@@ -1,4 +1,4 @@
-﻿using GHelper.Gpu;
+using GHelper.Gpu;
 using GHelper.Helpers;
 using GHelper.Input;
 using System.Drawing.Drawing2D;
@@ -290,9 +290,9 @@ namespace GHelper.USB
                 if (delay) await Task.Delay(TimeSpan.FromSeconds(1));
                 if (isACPI) Program.acpi.TUFKeyboardBrightness(brightness);
 
-                if (AppConfig.IsInputBacklight()) 
+                if (AppConfig.IsInputBacklight())
                     AsusHid.WriteInput(new byte[] { AsusHid.INPUT_ID, 0xBA, 0xC5, 0xC4, (byte)brightness }, log);
-                else 
+                else
                     AsusHid.Write(new byte[] { AsusHid.AURA_ID, 0xBA, 0xC5, 0xC4, (byte)brightness }, log);
 
                 if (AppConfig.IsAlly()) ApplyAura();

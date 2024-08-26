@@ -1,4 +1,4 @@
-﻿using GHelper;
+using GHelper;
 using GHelper.Battery;
 using GHelper.Fan;
 using GHelper.Gpu;

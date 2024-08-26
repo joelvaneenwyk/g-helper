@@ -1,4 +1,4 @@
-﻿using GHelper.Display;
+using GHelper.Display;
 using GHelper.Gpu.AMD;
 using GHelper.Helpers;
 using GHelper.Input;
@@ -174,7 +174,7 @@ namespace GHelper
             numericBacklightPluggedTime.AccessibleName = Properties.Strings.BacklightTimeoutPlugged;
             numericBacklightTime.AccessibleName = Properties.Strings.BacklightTimeoutBattery;
 
-            comboKeyboardSpeed.AccessibleName = Properties.Strings.LaptopBacklight + " " +Properties.Strings.AnimationSpeed;
+            comboKeyboardSpeed.AccessibleName = Properties.Strings.LaptopBacklight + " " + Properties.Strings.AnimationSpeed;
             comboAPU.AccessibleName = Properties.Strings.LaptopBacklight + " " + Properties.Strings.AnimationSpeed;
 
             checkBoot.AccessibleName = Properties.Strings.Boot + " " + Properties.Strings.LaptopBacklight;
@@ -482,12 +482,14 @@ namespace GHelper
 
         private void ButtonACPISend_Click(object? sender, EventArgs e)
         {
-            try {
+            try
+            {
                 int deviceID = Convert.ToInt32(textACPICommand.Text, 16);
                 int status = Convert.ToInt32(textACPIParam.Text, textACPIParam.Text.Contains("x") ? 16 : 10);
                 int result = Program.acpi.DeviceSet((uint)deviceID, status, "TestACPI " + deviceID.ToString("X8") + " " + status.ToString("X4"));
                 labelACPITitle.Text = "ACPI DEVS Test : " + result.ToString();
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Logger.WriteLine(ex.Message);
             }
@@ -786,7 +788,7 @@ namespace GHelper
                 AppConfig.Set("keyboard_awake_bar_bat", (checkBatteryBar.Checked ? 1 : 0));
                 AppConfig.Set("keyboard_awake_lid_bat", (checkBatteryLid.Checked ? 1 : 0));
                 AppConfig.Set("keyboard_awake_logo_bat", (checkBatteryLogo.Checked ? 1 : 0));
-            } 
+            }
 
             Aura.ApplyPower();
 
@@ -809,7 +811,8 @@ namespace GHelper
                 {
                     MaximumSize = new Size(Width, Program.settingsForm.Height);
                     Top = Program.settingsForm.Top;
-                } else
+                }
+                else
                 {
                     Top = top;
                 }

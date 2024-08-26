@@ -1,4 +1,4 @@
-﻿using GHelper.Helpers;
+using GHelper.Helpers;
 
 public static class TouchscreenHelper
 {
@@ -10,7 +10,7 @@ public static class TouchscreenHelper
 
             var status = !ProcessHelper.RunCMD("powershell", "(Get-PnpDevice -FriendlyName '*touch*screen*').Status").Contains("OK");
             ProcessHelper.RunCMD("powershell", (status ? "Enable-PnpDevice" : "Disable-PnpDevice") + " -InstanceId (Get-PnpDevice -FriendlyName '*touch*screen*').InstanceId -Confirm:$false");
-            
+
             return status;
         }
         catch (Exception ex)

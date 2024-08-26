@@ -1,4 +1,4 @@
-﻿using GHelper.UI;
+using GHelper.UI;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -81,7 +81,7 @@ public static class ControlHelper
                 combo.ArrowColor = RForm.foreMain;
             }
             var numbericUpDown = control as NumericUpDown;
-            if(numbericUpDown is not null)
+            if (numbericUpDown is not null)
             {
                 numbericUpDown.ForeColor = RForm.foreMain;
                 numbericUpDown.BackColor = RForm.buttonMain;
@@ -192,7 +192,7 @@ public static class ControlHelper
                 pic.SetPixel(x, y, Color.FromArgb(col.A, tintColor.R, tintColor.G, tintColor.B));
             }
         }
-        
+
         return pic;
     }
 

@@ -1,4 +1,4 @@
-﻿
+
 namespace GHelper.Peripherals.Mouse.Models
 {
     //SPATHA_WIRELESS

@@ -1,4 +1,4 @@
-﻿using GHelper.Helpers;
+using GHelper.Helpers;
 using System.IO.Compression;
 
 namespace GHelper.Display

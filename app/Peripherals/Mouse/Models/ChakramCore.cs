@@ -1,11 +1,12 @@
-﻿
+
 namespace GHelper.Peripherals.Mouse.Models
 {
     //P511
     public class ChakramCore : AsusMouse
     {
-        public ChakramCore() : base(0x0B05, 0x1958, "mi_00", false) { 
-        
+        public ChakramCore() : base(0x0B05, 0x1958, "mi_00", false)
+        {
+
         }
 
         public override int DPIProfileCount()

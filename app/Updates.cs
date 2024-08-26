@@ -1,4 +1,4 @@
-﻿using GHelper.UI;
+using GHelper.UI;
 using System.Diagnostics;
 using System.Management;
 using System.Net;

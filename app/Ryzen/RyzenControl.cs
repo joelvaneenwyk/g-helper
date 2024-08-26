@@ -1,4 +1,4 @@
-﻿//
+//
 // This is a optimised/simplified version of Ryzen System Management Unit from https://github.com/JamesCJ60/Universal-x86-Tuning-Utility
 // I do not take credit for the full functionality of the code (c)
 //

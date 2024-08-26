@@ -1,4 +1,4 @@
-﻿using GHelper.Display;
+using GHelper.Display;
 using GHelper.Helpers;
 using GHelper.Mode;
 using GHelper.USB;
@@ -639,7 +639,7 @@ namespace GHelper.Input
             bool fnLock = !AppConfig.Is("fn_lock");
             AppConfig.Set("fn_lock", fnLock ? 1 : 0);
 
-            if (AppConfig.IsHardwareFnLock()) 
+            if (AppConfig.IsHardwareFnLock())
                 HardwareFnLock(fnLock);
             else
                 Program.settingsForm.BeginInvoke(Program.inputDispatcher.RegisterKeys);
@@ -948,7 +948,7 @@ namespace GHelper.Input
                 if (b < 0) Program.acpi.DeviceSet(AsusACPI.ScreenPadToggle, 0, "ScreenpadOff");
             };
 
-            if(delay <= 0 || (brightness > 0 && brightness < 100 && doToggle == false)) //instant action
+            if (delay <= 0 || (brightness > 0 && brightness < 100 && doToggle == false)) //instant action
             {
                 action(brightness);
             }

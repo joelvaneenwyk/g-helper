@@ -1,11 +1,12 @@
-﻿
+
 namespace GHelper.Peripherals.Mouse.Models
 {
     //P704
     public class Chakram : AsusMouse
     {
-        public Chakram() : base(0x0B05, 0x18E5, "mi_00", true) { 
-        
+        public Chakram() : base(0x0B05, 0x18E5, "mi_00", true)
+        {
+
         }
 
         protected Chakram(ushort vendorId, bool wireless) : base(0x0B05, vendorId, "mi_00", wireless)

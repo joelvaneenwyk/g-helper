@@ -1,4 +1,4 @@
-﻿// Source thanks to https://github.com/vddCore/Starlight with some adjustments from me
+// Source thanks to https://github.com/vddCore/Starlight with some adjustments from me
 
 using GHelper.AnimeMatrix.Communication;
 using System.Drawing.Drawing2D;
@@ -315,7 +315,7 @@ namespace GHelper.AnimeMatrix
 
             if (x >= FirstX(y) && x < Width())
                 SetLedLinear(RowToLinearAddress(y) - FirstX(y) + x, value);
-            }
+        }
 
         public void SetLedDiagonal(int x, int y, byte color, int deltaX = 0, int deltaY = 0)
         {

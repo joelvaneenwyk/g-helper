@@ -1,4 +1,4 @@
-﻿using GHelper.Peripherals.Mouse;
+using GHelper.Peripherals.Mouse;
 using GHelper.UI;
 
 namespace GHelper
@@ -877,7 +877,8 @@ namespace GHelper
             try
             {
                 dpi = mouse.DpiSettings[mouse.DpiProfile - 1];
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Logger.WriteLine($"Wrong mouse DPI: {mouse.DpiProfile} {mouse.DpiSettings.Length} {ex.Message}");
                 return;

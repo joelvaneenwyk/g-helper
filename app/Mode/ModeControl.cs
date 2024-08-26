@@ -1,4 +1,4 @@
-﻿using GHelper.Gpu.NVidia;
+using GHelper.Gpu.NVidia;
 using GHelper.Helpers;
 using GHelper.USB;
 using Ryzen;
@@ -162,7 +162,8 @@ namespace GHelper.Mode
                 modeToggleTimer.Start();
                 Modes.SetCurrent(Modes.GetNext(back));
                 Toast();
-            } else
+            }
+            else
             {
                 SetPerformanceMode(Modes.GetNext(back), true);
             }
@@ -388,7 +389,7 @@ namespace GHelper.Mode
             if (gpu_power >= AsusACPI.MinGPUPower && gpu_power <= AsusACPI.MaxGPUPower && Program.acpi.DeviceGet(AsusACPI.GPU_POWER) >= 0)
                 Program.acpi.DeviceSet(AsusACPI.GPU_POWER, gpu_power, "PowerLimit TGP (GPU VAR)");
 
-            if (gpu_boost >= AsusACPI.MinGPUBoost && gpu_boost <= AsusACPI.MaxGPUBoost && Program.acpi.DeviceGet(AsusACPI.PPT_GPUC0) >= 0) 
+            if (gpu_boost >= AsusACPI.MinGPUBoost && gpu_boost <= AsusACPI.MaxGPUBoost && Program.acpi.DeviceGet(AsusACPI.PPT_GPUC0) >= 0)
                 boostResult = Program.acpi.DeviceSet(AsusACPI.PPT_GPUC0, gpu_boost, "PowerLimit C0 (GPU BOOST)");
 
             if (gpu_temp >= AsusACPI.MinGPUTemp && gpu_temp <= AsusACPI.MaxGPUTemp && Program.acpi.DeviceGet(AsusACPI.PPT_GPUC2) >= 0)

@@ -1,4 +1,4 @@
-﻿
+
 namespace GHelper.Peripherals
 {
     public enum PeripheralType

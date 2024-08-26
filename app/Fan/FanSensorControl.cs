@@ -1,4 +1,4 @@
-﻿using GHelper.Mode;
+using GHelper.Mode;
 
 namespace GHelper.Fan
 {

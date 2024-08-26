@@ -1,4 +1,4 @@
-﻿using GHelper.USB;
+using GHelper.USB;
 using HidSharp;
 using System.Text;
 

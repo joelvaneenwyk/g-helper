@@ -1,4 +1,4 @@
-﻿using GHelper.Helpers;
+using GHelper.Helpers;
 using Microsoft.Win32.TaskScheduler;
 using System.Diagnostics;
 using System.Security.Principal;
@@ -41,7 +41,8 @@ public class Startup
                         UnSchedule();
                         Schedule();
                     }
-                } catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
                     Logger.WriteLine($"Can't check startup task: {ex.Message}");
                 }
@@ -66,7 +67,7 @@ public class Startup
             td.Triggers.Add(new LogonTrigger { UserId = userId, Delay = TimeSpan.FromSeconds(1) });
             td.Actions.Add(strExeFilePath);
 
-            if (ProcessHelper.IsUserAdministrator()) 
+            if (ProcessHelper.IsUserAdministrator())
                 td.Principal.RunLevel = TaskRunLevel.Highest;
 
             td.Settings.StopIfGoingOnBatteries = false;

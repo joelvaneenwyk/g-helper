@@ -68,7 +68,8 @@ public class AmdGpuControl : IGpuControl
         try
         {
             if (Adl2.ADL2_Main_Control_Create(1, out _adlContextHandle) != Adl2.ADL_SUCCESS) return;
-        } catch (Exception ex)
+        }
+        catch (Exception ex)
         {
             Logger.WriteLine(ex.Message);
             return;

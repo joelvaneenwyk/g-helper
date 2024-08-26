@@ -1,4 +1,4 @@
-﻿using NAudio.CoreAudioApi;
+using NAudio.CoreAudioApi;
 
 namespace GHelper.Helpers
 {
@@ -13,7 +13,7 @@ namespace GHelper.Helpers
                 var mmDevice = enumerator.GetDefaultAudioEndpoint(DataFlow.Capture, Role.Multimedia);
 
                 bool status = !commDevice.AudioEndpointVolume.Mute;
-                
+
                 commDevice.AudioEndpointVolume.Mute = status;
                 consoleDevice.AudioEndpointVolume.Mute = status;
                 mmDevice.AudioEndpointVolume.Mute = status;

@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Security.Principal;
 
 namespace GHelper.Helpers
@@ -136,7 +136,7 @@ namespace GHelper.Helpers
             Logger.WriteLine(name + " " + args);
             string result = cmd.StandardOutput.ReadToEnd().Replace(Environment.NewLine, " ").Trim(' ');
             Logger.WriteLine(result);
-            
+
             cmd.WaitForExit();
 
             return result;
