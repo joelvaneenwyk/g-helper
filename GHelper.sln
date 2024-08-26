@@ -8,10 +8,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "{root}", "{root}", "{B6E44CC6-5D28-4CB9-8EE2-BE9D6238E2D6}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		..\.gitattributes = ..\.gitattributes
-		..\.gitignore = ..\.gitignore
-		..\crowdin.yml = ..\crowdin.yml
-		..\LICENSE = ..\LICENSE
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		crowdin.yml = crowdin.yml
+		LICENSE = LICENSE
 	EndProjectSection
 EndProject
 Global
