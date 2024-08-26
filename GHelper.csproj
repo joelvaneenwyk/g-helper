@@ -40,21 +40,21 @@
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="app\bin\**" />
-    <Compile Remove="app\obj\**" />
-    <Compile Remove="Resources\**" />
+    <Compile Remove="app/bin/**" />
+    <Compile Remove="app/obj/**" />
+    <Compile Remove="Resources/**" />
     <Compile Remove="screenshots/**" />
-    <EmbeddedResource Remove="app\bin\**" />
-    <EmbeddedResource Remove="app\obj\**" />
-    <EmbeddedResource Remove="Resources\**" />
+    <EmbeddedResource Remove="app/bin/**" />
+    <EmbeddedResource Remove="app/obj/**" />
+    <EmbeddedResource Remove="Resources/**" />
     <EmbeddedResource Remove="screenshots/**" />
-    <None Remove="app\bin\**" />
-    <None Remove="app\obj\**" />
-    <None Remove="Resources\**" />
+    <None Remove="app/bin/**" />
+    <None Remove="app/obj/**" />
+    <None Remove="Resources/**" />
     <None Remove="screenshots/**" />
   </ItemGroup>
   <ItemGroup>
-    <AdditionalFiles Remove="app\app.manifest" />
+    <AdditionalFiles Remove="app/app.manifest" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Resources/eco.ico" />
@@ -84,51 +84,56 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Properties/Resources.Designer.cs">
+    <Compile Update="app/Properties/Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
+      <DependentUpon>app/Properties/Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Properties/Strings.Designer.cs">
+    <Compile Update="app/Properties/Strings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Strings.resx</DependentUpon>
+      <DependentUpon>app/Properties/Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="app/Properties/Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>app/Properties/Settings.settings</DependentUpon>
     </Compile>
     <Compile Update="Properties/Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
+      <DependentUpon>app/Properties/Settings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Properties/Resources.uk.resx">
+    <EmbeddedResource Update="app/Properties/Resources.uk.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Properties/Resources.uk.resx">
+    <EmbeddedResource Update="app/Properties/Resources.uk.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Properties/Strings.uk.resx">
-      <LastGenOutput>Strings.uk.Designer.cs</LastGenOutput>
+    <EmbeddedResource Update="app/Properties/Strings.uk.resx">
+      <LastGenOutput>app/Properties/Strings.uk.Designer.cs</LastGenOutput>
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Properties/Strings.resx">
+    <EmbeddedResource Update="app/Properties/Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <LastGenOutput>app/Properties/Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Update="Properties/Resources.resx">
+    <EmbeddedResource Update="app/Properties/Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <LastGenOutput>app/Properties/Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Update="Properties/Settings.settings">
+    <None Update="app/Properties/Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <LastGenOutput>app/Properties/Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Update="WinRing0x64.dll">
+    <None Update="app/WinRing0x64.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="WinRing0x64.sys">
+    <None Update="app/WinRing0x64.sys">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
