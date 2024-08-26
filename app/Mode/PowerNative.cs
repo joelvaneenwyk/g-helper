@@ -1,4 +1,4 @@
-﻿using System.Runtime.InteropServices;
+using System.Runtime.InteropServices;
 
 namespace GHelper.Mode
 {
@@ -153,7 +153,7 @@ namespace GHelper.Mode
             Guid guidScheme = new Guid(scheme);
 
             uint status = PowerGetEffectiveOverlayScheme(out Guid activeScheme);
-            
+
             if (GetBatterySaverStatus())
             {
                 Logger.WriteLine("Battery Saver detected");
@@ -228,16 +228,20 @@ namespace GHelper.Mode
             return activeIndex.ToInt32();
         }
 
-
+        /// <summary>
+        /// Set the action to be taken when the lid is closed.
+        /// </summary>
+        /// <param name="action">
+        /// <list type="numbered">
+        /// <item>1: Do nothing</item>
+        /// <item>2: Sleep</item>
+        /// <item>3: Hibernate</item>
+        /// <item>4: Shutdown</item>
+        /// </list>
+        /// </param>
+        /// <param name="acOnly"></param>
         public static void SetLidAction(int action, bool acOnly = false)
         {
-            /**
-             * 1: Do nothing
-             * 2: Seelp
-             * 3: Hibernate
-             * 4: Shutdown
-             */
-
             Guid activeSchemeGuid = GetActiveScheme();
 
             var hrAC = PowerWriteACValueIndex(
@@ -331,7 +335,8 @@ namespace GHelper.Mode
             {
                 GetSystemPowerStatus(sps);
                 return (sps.SystemStatusFlag > 0);
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 return false;
             }

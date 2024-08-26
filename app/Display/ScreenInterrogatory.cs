@@ -1,5 +1,4 @@
-﻿using GHelper.Helpers;
-using NvAPIWrapper.Display;
+using GHelper.Helpers;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 
@@ -11,6 +10,7 @@ namespace GHelper.Display
 
         #region enums
 
+        [Flags]
         public enum QUERY_DEVICE_CONFIG_FLAGS : uint
         {
             QDC_ALL_PATHS = 0x00000001,
@@ -344,15 +344,16 @@ namespace GHelper.Display
                     try
                     {
                         displayName = DeviceName(displayModes[i].adapterId, displayModes[i].id);
-                        
-                    } catch (Exception e)
+
+                    }
+                    catch (Exception e)
                     {
                         Logger.WriteLine(e.Message);
                     }
 
                     if (displayName is not null) yield return (DISPLAYCONFIG_TARGET_DEVICE_NAME)displayName;
                 }
-                    
+
         }
 
 
@@ -375,7 +376,7 @@ namespace GHelper.Display
                     var isMirroring = (displayMonitor.StateFlags & DisplayDeviceStates.MIRRORING_DRIVER) == DisplayDeviceStates.MIRRORING_DRIVER;
                     if (isAttached && !isMirroring) yield return displayMonitor;
                     displayMonitorNumber++;
-                    
+
                 }
 
                 displayAdapterNumber++;

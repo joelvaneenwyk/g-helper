@@ -121,7 +121,7 @@ public enum ADLSensorType
     PMLOG_CLK_FCLK = 44,
     PMLOG_THROTTLER_STATUS_CPU = 45,
     PMLOG_SSPAIRED_ASICPOWER = 46, // apuPower
-    PMLOG_SSTOTAL_POWERLIMIT = 47, // Total Power limit    
+    PMLOG_SSTOTAL_POWERLIMIT = 47, // Total Power limit
     PMLOG_SSAPU_POWERLIMIT = 48, // APU Power limit
     PMLOG_SSDGPU_POWERLIMIT = 49, // DGPU Power limit
     PMLOG_TEMPERATURE_HOTSPOT_GCD = 50,
@@ -406,9 +406,10 @@ public class Adl2
 
     #endregion Internal Constant
 
-    // ///// <summary> ADL Create Function to create ADL Data</summary>
+    /// <summary> ADL Create Function to create ADL Data</summary>
     /// <param name="enumConnectedAdapters">If it is 1, then ADL will only return the physical exist adapters </param>
-    ///// <returns> retrun ADL Error Code</returns>
+    /// <param name="adlContextHandle"></param>
+    /// <returns>Return ADL Error Code</returns>
     public static int ADL2_Main_Control_Create(int enumConnectedAdapters, out nint adlContextHandle)
     {
         return NativeMethods.ADL2_Main_Control_Create(ADL_Main_Memory_Alloc_Impl_Reference, enumConnectedAdapters, out adlContextHandle);
@@ -464,43 +465,48 @@ public class Adl2
     {
         /// <summary> ADL Memory allocation function allows ADL to callback for memory allocation</summary>
         /// <param name="size">input size</param>
-        /// <returns> retrun ADL Error Code</returns>
+        /// <returns> return ADL Error Code</returns>
         public delegate nint ADL_Main_Memory_Alloc(int size);
 
-        // ///// <summary> ADL Create Function to create ADL Data</summary>
-        /// <param name="callback">Call back functin pointer which is ised to allocate memeory </param>
-        /// <param name="enumConnectedAdapters">If it is 1, then ADL will only retuen the physical exist adapters </param>
-        ///// <returns> retrun ADL Error Code</returns>
+        /// <summary> ADL Create Function to create ADL Data</summary>
+        /// <param name="callback">Call back function pointer which is used to allocate memory </param>
+        /// <param name="enumConnectedAdapters">If it is 1, then ADL will only return the physical exist adapters </param>
+        /// <param name="adlContextHandle"></param>
+        /// <returns> return ADL Error Code</returns>
         [DllImport(Atiadlxx_FileName)]
         public static extern int ADL2_Main_Control_Create(ADL_Main_Memory_Alloc callback, int enumConnectedAdapters, out nint adlContextHandle);
 
         /// <summary> ADL Destroy Function to free up ADL Data</summary>
-        /// <returns> retrun ADL Error Code</returns>
+        /// <returns>Return ADL Error Code</returns>
         [DllImport(Atiadlxx_FileName)]
         public static extern int ADL2_Main_Control_Destroy(nint adlContextHandle);
 
         /// <summary> ADL Function to get the number of adapters</summary>
+        /// <param name="adlContextHandle"></param>
         /// <param name="numAdapters">return number of adapters</param>
-        /// <returns> retrun ADL Error Code</returns>
+        /// <returns>Return ADL Error Code</returns>
         [DllImport(Atiadlxx_FileName)]
         public static extern int ADL2_Adapter_NumberOfAdapters_Get(nint adlContextHandle, out int numAdapters);
 
         /// <summary> ADL Function to get the GPU adapter information</summary>
+        /// <param name="adlContextHandle"></param>
         /// <param name="info">return GPU adapter information</param>
         /// <param name="inputSize">the size of the GPU adapter struct</param>
-        /// <returns> retrun ADL Error Code</returns>
+        /// <returns>Return ADL Error Code</returns>
         [DllImport(Atiadlxx_FileName)]
         public static extern int ADL2_Adapter_AdapterInfo_Get(nint adlContextHandle, nint info, int inputSize);
 
         /// <summary> Function to determine if the adapter is active or not.</summary>
-        /// <remarks>The function is used to check if the adapter associated with iAdapterIndex is active</remarks>  
+        /// <remarks>The function is used to check if the adapter associated with iAdapterIndex is active</remarks>
+        /// <param name="adlContextHandle"></param>
         /// <param name="adapterIndex"> Adapter Index.</param>
         /// <param name="status"> Status of the adapter. True: Active; False: Dsiabled</param>
-        /// <returns>Non zero is successfull</returns> 
+        /// <returns>Non zero is successfull</returns>
         [DllImport(Atiadlxx_FileName)]
         public static extern int ADL2_Adapter_Active_Get(nint adlContextHandle, int adapterIndex, out int status);
 
         /// <summary>Get display information based on adapter index</summary>
+        /// <param name="adlContextHandle"></param>
         /// <param name="adapterIndex">Adapter Index</param>
         /// <param name="numDisplays">return the total number of supported displays</param>
         /// <param name="displayInfoArray">return ADLDisplayInfo Array for supported displays' information</param>

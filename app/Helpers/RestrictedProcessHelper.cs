@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -158,6 +158,7 @@ public static class RestrictedProcessHelper
         public SID_AND_ATTRIBUTES Label;
     }
 
+    [Flags]
     public enum SaferLevel : uint
     {
         Disallowed = 0,
