@@ -11,33 +11,34 @@ Lightweight alternative to Armoury Crate for Asus laptops offering almost same f
 
 Works with all popular models, such as ROG Zephyrus G14, G15, G16, M16, Flow X13, Flow X16, Flow Z13, TUF Series, Strix or Scar Series, ProArt, Vivobook, Zenbook, ROG Ally / Ally X, and many more!
 
-> [![G-Helper Download](https://github.com/seerge/g-helper/assets/5920850/4d98465a-63a5-4498-ae14-afb3e67e7e82)](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
->
-> [:floppy_disk: Download](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
-
----
-
-- [FAQ](https://github.com/seerge/g-helper/wiki/FAQ)
-- [Setup and Requirements](https://github.com/seerge/g-helper/wiki/Requirements)
-- [Troubleshooting](https://github.com/seerge/g-helper/wiki/Troubleshooting)
-- [Power User Settings](https://github.com/seerge/g-helper/wiki/Power-user-settings)
-
 > [!NOTE]
 > **⭐ If you like the app - please spread the word about it online**
-> <table>
-> <tr>
->    <td><b>Support Project</b></td>
->    <td >
->       <a href="https://bit.ly/4c0ZWs9"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/paypal-eur.png" height="36" alt="PayPal EUR"></a>&nbsp;
->       <a href="https://bit.ly/4aGTyW8"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/paypal-usd.png" height="36" alt="PayPal USD"></a>&nbsp;
->       <a href="https://buy.stripe.com/8wM6pt8HbgK50tWbIK"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/stripe.png" height="36" alt="Stripe"></a>&nbsp;
->       <a href="https://buy.stripe.com/6oE29dg9D3Xj7Wo28b"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/alipay.png" height="36" alt="Alipay"></a>
->    </td>
-> </tr>
-> </table>
+>
+> > [![G-Helper Download](https://github.com/seerge/g-helper/assets/5920850/4d98465a-63a5-4498-ae14-afb3e67e7e82)](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
+> >
+> > [:floppy_disk: Download](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
+> > <table>
+> > <tr>
+> > <td><b>Support Project</b></td>
+> > <td >
+> > <a href="https://bit.ly/4c0ZWs9"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/paypal-eur.png" height="36" alt="PayPal EUR"></a>&nbsp;
+> > <a href="https://bit.ly/4aGTyW8"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/paypal-usd.png" height="36" alt="PayPal USD"></a>&nbsp;
+> > <a href="https://buy.stripe.com/8wM6pt8HbgK50tWbIK"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/stripe.png" height="36" alt="Stripe"></a>&nbsp;
+> > <a href="https://buy.stripe.com/6oE29dg9D3Xj7Wo28b"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/alipay.png" height="36" alt="Alipay"></a>
+> > </td>
+> > </tr>
+> > </table>
+
+## Documentation
+
+- [FAQ](./docs/wiki/FAQ.md)
+- [Setup and Requirements](./docs/wiki/Requirements.md)
+- [Troubleshooting](./docs/wiki/Troubleshooting.md)
+- [Power User Settings](./docs/wiki/Power-user-settings.md)
 
 ## Table of Contents <!-- omit from toc -->
 
+- [Documentation](#documentation)
 - [:loudspeaker: YouTube Reviews and Guides](#loudspeaker-youtube-reviews-and-guides)
 - [📰 Articles](#-articles)
 - [:gift: Advantages](#gift-advantages)
