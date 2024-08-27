@@ -2,14 +2,41 @@
 
 <!-- markdownlint-disable MD033 -->
 
-[![GitHub release](https://img.shields.io/github/release/seerge/g-helper)](https://GitHub.com/seerge/g-helper/releases/)
-[![Github all releases](https://img.shields.io/github/downloads/seerge/g-helper/total)](https://GitHub.com/seerge/g-helper/releases/) [![GitHub stars](https://img.shields.io/github/stars/seerge/g-helper.svg?style=social)](https://GitHub.com/seerge/g-helper/stargazers/) <sup>[中文版点这里](https://github.com/seerge/g-helper/blob/main/docs/README.zh-CN.md)</sup>
+> [中文版点这里](https://github.com/seerge/g-helper/blob/main/docs/README.zh-CN.md)
 
-Small and lightweight Armoury Crate alternative for Asus laptops offering almost same functionality without extra load and unnecessary services.
+[![GitHub release](https://img.shields.io/github/release/seerge/g-helper)](https://GitHub.com/seerge/g-helper/releases/)
+[![Github all releases](https://img.shields.io/github/downloads/seerge/g-helper/total)](https://GitHub.com/seerge/g-helper/releases/) [![GitHub stars](https://img.shields.io/github/stars/seerge/g-helper.svg?style=social)](https://GitHub.com/seerge/g-helper/stargazers/)
+
+Lightweight alternative to Armoury Crate for Asus laptops offering almost same functionality without extra load and unnecessary services.
 
 Works with all popular models, such as ROG Zephyrus G14, G15, G16, M16, Flow X13, Flow X16, Flow Z13, TUF Series, Strix or Scar Series, ProArt, Vivobook, Zenbook, ROG Ally / Ally X, and many more!
 
-> [:floppy_disk:Download](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
+> [![G-Helper Download](https://github.com/seerge/g-helper/assets/5920850/4d98465a-63a5-4498-ae14-afb3e67e7e82)](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
+>
+> [:floppy_disk: Download](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
+
+---
+
+- [FAQ](https://github.com/seerge/g-helper/wiki/FAQ)
+- [Setup and Requirements](https://github.com/seerge/g-helper/wiki/Requirements)
+- [Troubleshooting](https://github.com/seerge/g-helper/wiki/Troubleshooting)
+- [Power User Settings](https://github.com/seerge/g-helper/wiki/Power-user-settings)
+
+> [!NOTE]
+> **⭐ If you like the app - please spread the word about it online**
+> <table>
+> <tr>
+>    <td><b>Support Project</b></td>
+>    <td >
+>       <a href="https://bit.ly/4c0ZWs9"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/paypal-eur.png" height="36" alt="PayPal EUR"></a>&nbsp;
+>       <a href="https://bit.ly/4aGTyW8"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/paypal-usd.png" height="36" alt="PayPal USD"></a>&nbsp;
+>       <a href="https://buy.stripe.com/8wM6pt8HbgK50tWbIK"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/stripe.png" height="36" alt="Stripe"></a>&nbsp;
+>       <a href="https://buy.stripe.com/6oE29dg9D3Xj7Wo28b"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/alipay.png" height="36" alt="Alipay"></a>
+>    </td>
+> </tr>
+> </table>
+
+## Table of Contents <!-- omit from toc -->
 
 - [:loudspeaker: YouTube Reviews and Guides](#loudspeaker-youtube-reviews-and-guides)
 - [📰 Articles](#-articles)
@@ -24,28 +51,6 @@ Works with all popular models, such as ROG Zephyrus G14, G15, G16, M16, Flow X13
   - [🔖 Important Notice](#-important-notice)
   - [Libraries and projects used](#libraries-and-projects-used)
   - [Disclaimers](#disclaimers)
-
-> [!NOTE]
-> **⭐ If you like the app - please spread the word about it online**
-
-<table>
-<tr>
-   <td><b>Support Project</b></td>
-   <td >
-      <a href="https://bit.ly/4c0ZWs9"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/paypal-eur.png" height="36" alt="PayPal EUR"></a>&nbsp;
-      <a href="https://bit.ly/4aGTyW8"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/paypal-usd.png" height="36" alt="PayPal USD"></a>&nbsp;
-      <a href="https://buy.stripe.com/8wM6pt8HbgK50tWbIK"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/stripe.png" height="36" alt="Stripe"></a>&nbsp;
-      <a href="https://buy.stripe.com/6oE29dg9D3Xj7Wo28b"><img src="https://raw.githubusercontent.com/seerge/g-helper/main/docs/alipay.png" height="36" alt="Alipay"></a>
-   </td>
-</tr>
-</table>
-
-- [FAQ](https://github.com/seerge/g-helper/wiki/FAQ)
-- [Setup and Requirements](https://github.com/seerge/g-helper/wiki/Requirements)
-- [Troubleshooting](https://github.com/seerge/g-helper/wiki/Troubleshooting)
-- [Power User Settings](https://github.com/seerge/g-helper/wiki/Power-user-settings)
-
-[![G-Helper Download](https://github.com/seerge/g-helper/assets/5920850/4d98465a-63a5-4498-ae14-afb3e67e7e82)](https://github.com/seerge/g-helper/releases/latest/download/GHelper.zip)
 
 ## :loudspeaker: YouTube Reviews and Guides
 
