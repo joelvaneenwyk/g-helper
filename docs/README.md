@@ -31,10 +31,10 @@ Works with all popular models, such as ROG Zephyrus G14, G15, G16, M16, Flow X13
 
 ## Documentation
 
-- [FAQ](./docs/wiki/FAQ.md)
-- [Setup and Requirements](./docs/wiki/Requirements.md)
-- [Troubleshooting](./docs/wiki/Troubleshooting.md)
-- [Power User Settings](./docs/wiki/Power-user-settings.md)
+- [FAQ](./wiki/FAQ.md)
+- [Setup and Requirements](./wiki/Requirements.md)
+- [Troubleshooting](./wiki/Troubleshooting.md)
+- [Power User Settings](./wiki/Power-user-settings.md)
 
 ## Table of Contents <!-- omit from toc -->
 
